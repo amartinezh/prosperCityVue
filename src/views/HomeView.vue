@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo_p.jpg" style="width:60%">
-    <HelloWorld msg="Bienvenidos a una gran esperiencia"/>
+    <HelloWorld msg="Bienvenidos a una gran experiencia"/>
   </div>
 </template>
 

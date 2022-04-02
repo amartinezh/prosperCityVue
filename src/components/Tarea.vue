@@ -9,10 +9,10 @@
       <li>1. Reunirse con el grupo asignado</li><br>
       <li>2. Plantear responsabilidades al interior del mismo por cada integrante</li><br>
       <li>3. El Lider deberá sacar un listado de participantes y asignar tareas</li><br>
-      <li>4. clonar el repositorio de Vue: https://github.com/amartinezh/prosperCityVue.git</li><br>
+      <li>4. clonar el repositorio de Vue: </li><br>
       <li>5. Agregar un nuevo componente </li><br>
       <li>6. Cada integrante preparará una breve explicación </li><br>
-      <li>7. Asistir a las 9PM en punto al grupo principal y exponer (cada integrante
+      <li>7. Exponer y grabar un video (cada integrante
          hablará con cámara) </li><br>
   </ol>
   </div>

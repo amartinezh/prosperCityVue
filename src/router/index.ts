@@ -22,7 +22,9 @@ const routes: Array<RouteRecordRaw> = [
     path: '/dayana',
     name: 'dayana',
     component: DayanaView,
-=======
+  },
+  {
+      =======
     path: '/tarea',
     name: 'tarea',
     component: TareaView,

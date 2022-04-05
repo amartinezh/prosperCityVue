@@ -1,14 +1,8 @@
 <template>
   <nav>
-<<<<<<< HEAD
-    <router-link to="/">Inicio</router-link> |
-    <router-link to="/about">Acerca de ...</router-link> |
-    <router-link to="/dayana">Pagina</router-link> |
-=======
     <router-link to="/">--Inicio--</router-link> |
     <router-link to="/about">-- Acerca de ... --</router-link> |
     <router-link to="/tarea">-- Tarea Abril 1 --</router-link>
->>>>>>> 8693a4f0554fb44d0830dc29cb544e20e4438b42
   </nav>
   <router-view/>
 </template>

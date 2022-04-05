@@ -3,6 +3,8 @@
     <router-link to="/">--Inicio--</router-link> |
     <router-link to="/about">-- Acerca de ... --</router-link> |
     <router-link to="/tarea">-- Tarea Abril 1 --</router-link>
+    <router-link to="/componentDayana">-- Dayana --</router-link>
+     <router-link to="/componentEmanuel">-- Emmanuel --</router-link>
   </nav>
   <router-view/>
 </template>

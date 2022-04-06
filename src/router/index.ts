@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import TareaView from '../views/TareaView.vue';
+import GrupoRojoView from '../views/GrupoRojoView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/tarea',
     name: 'tarea',
     component: TareaView,
+  },
+  {
+    path: '/grupoRojo',
+    name: 'grupoRojo',
+    component: GrupoRojoView,
   },
 ];
 

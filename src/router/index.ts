@@ -18,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'tarea',
     component: TareaView,
   },
+  {
+    path: '/equipo2',
+    name: 'equipo2',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EquipoDos.vue'),
+  },
 ];
 
 const router = createRouter({

@@ -3,6 +3,7 @@
     <router-link to="/">--Inicio--</router-link> |
     <router-link to="/about">-- Acerca de ... --</router-link> |
     <router-link to="/tarea">-- Tarea Abril 1 --</router-link>
+    <router-link to="/equipo2">-- Equipo 2 --</router-link>
   </nav>
   <router-view/>
 </template>

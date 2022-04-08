@@ -4,6 +4,10 @@
 </div>
 </template>
 
-export default ({
+<script>
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'GrupoRojoView',
 });
+</script>

@@ -24,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'grupoRojo',
     component: GrupoRojoView,
   },
+  {
+    path: '/azul',
+    name: 'azul',
+    component: () => import(/* webpackChunkName: "about" */ '../views/GrupoAzul.vue'),
+  },
 ];
 
 const router = createRouter({

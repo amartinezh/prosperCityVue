@@ -1,6 +1,6 @@
 <template>
 <div class="GrupoRojo">
- <h1>HOLA GRUPO ROJO</h1>
+ <anaComponent/>
  <ComponentDiana/>
  <RequisitosComp/>
  <ComponentDayana/>
@@ -9,6 +9,7 @@
 
 <script>
 import { defineComponent } from 'vue';
+import anaComponent from '@/components/anaComponent.vue';
 import ComponentDiana from '@/components/ComponentDiana.vue';
 import RequisitosComp from '@/components/RequisitosComp.vue';
 import ComponentDayana from '@/components/ComponentDayana.vue';
@@ -16,9 +17,10 @@ import ComponentDayana from '@/components/ComponentDayana.vue';
 export default defineComponent({
   name: 'GrupoRojoView',
   components: {
-    ComponentDayana,
-    RequisitosComp,
+    anaComponent,
     ComponentDiana,
+    RequisitosComp,
+    ComponentDayana,
   },
 });
 </script>

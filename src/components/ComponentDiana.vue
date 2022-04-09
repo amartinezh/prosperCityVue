@@ -17,6 +17,7 @@ export default defineComponent({
 
 <style>
 h1 {
+ margin-top: 250px;
  color: #4856fd;
  text-align: center;
 }

@@ -10,7 +10,7 @@ import { defineComponent } from 'vue';
 import sumarComponent from '@/components/sumarComponent.vue'; // @ is an alias to /src
 
 export default defineComponent({
-  name: 'TareaView',
+  name: 'calculadoraView',
   components: {
     sumarComponent,
   },

@@ -1,5 +1,6 @@
 <template>
     <div id="container">
+      Este componente se llama sumarComponent
         <showComponent msg="Este texto es enviado"></showComponent>
     </div>
 </template>

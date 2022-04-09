@@ -29,7 +29,11 @@ export default defineComponent({
       this.saluda = e.target.value;
     },
     saludar() {
-      this.saluda1 = this.saluda;
+      if (this.saluda !== '') {
+        this.saluda1 = this.saluda;
+      } else {
+        this.saluda1 = 'No has escrito nada aún';
+      }
     },
   },
 });

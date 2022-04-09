@@ -17,13 +17,13 @@ export default defineComponent({
 
 <style>
 h1 {
+ margin-top: 250px;
  color: #4856fd;
  text-align: center;
 }
 img{
- display: block;
  margin: 0px auto;
- width: 50%;
- height: 30%;
+ width: 300px;
+ height: 300px;
 }
 </style>

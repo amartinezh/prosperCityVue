@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'azul',
     component: () => import(/* webpackChunkName: "about" */ '../views/GrupoAzul.vue'),
   },
+  {
+    path: '/calculadora_prosper',
+    name: 'calculadora',
+    component: () => import(/* webpackChunkName: "about" */ '../views/calculadoraView.vue'),
+  },
 ];
 
 const router = createRouter({

@@ -5,14 +5,15 @@
     <router-link to="/tarea">Tarea Abril 1</router-link>
     <router-link to="/grupoRojo">Grupo Rojo</router-link>
     <router-link to="/Azul">Grupo Azul</router-link>
+    <router-link to="/calculadora_prosper">Sumar</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
-*{
+* {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 #app {

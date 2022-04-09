@@ -14,8 +14,9 @@
             <li>Erisc</li>
         </ul>
         <p><i>Aqui abajo pondremos el componente:</i></p>
-        <InputTarea />
         <BotonTarea palabra="Veces" />
+        <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
+        <InputTarea />
     </div>
 </template>
 

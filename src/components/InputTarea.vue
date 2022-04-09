@@ -9,7 +9,7 @@
         >
         <button class="send" @click.prevent="saludar">Enviar</button>
         </label>
-         <p>Hola: {{ saluda1 }}</p>
+         <p class="respuesta">{{ saluda1 }}</p>
         </form>
     </div>
 </template>
@@ -43,6 +43,8 @@ export default defineComponent({
     border:none;
     background-color: gray;
     margin: 15px 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 .nombre::placeholder{
     color:white;
@@ -54,5 +56,12 @@ export default defineComponent({
     background-color: yellow;
     width: 120px;
     font-size: 1.1rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.respuesta{
+  color: rgb(121, 121, 121);
+  font-style: italic;
+  font-size: 0.8rem;
 }
 </style>

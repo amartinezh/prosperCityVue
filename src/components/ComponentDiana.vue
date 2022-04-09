@@ -21,9 +21,8 @@ h1 {
  text-align: center;
 }
 img{
- display: block;
  margin: 0px auto;
- width: 50%;
- height: 30%;
+ width: 300px;
+ height: 300px;
 }
 </style>

@@ -1,12 +1,14 @@
 <template>
     <div class="input">
         <form action="#">
-         <p>{{ saluda }}</p>
         <label for="text">
-    <input  class="nombre" type="text" v-on:input="saludar2" placeholder="Digite su nombre">
+        <input  class="nombre"
+            type="text"
+            v-on:input="saludar2"
+            placeholder="Digite su nombre"
+        >
         <button class="send" @click.prevent="saludar">Enviar</button>
         </label>
-        <p>{{ saluda }}</p>
          <p>Hola: {{ saluda1 }}</p>
         </form>
     </div>
@@ -18,7 +20,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   data() {
     return {
-      saluda1: 'Hola',
+      saluda1: 'Aqui aparecerá tu nombre',
       saluda: '',
     };
   },
@@ -26,7 +28,7 @@ export default defineComponent({
     saludar2(e: any) {
       this.saluda = e.target.value;
     },
-    saluda() {
+    saludar() {
       this.saluda1 = this.saluda;
     },
   },

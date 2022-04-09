@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <TareaComponent titulo_tarea="Titulo de la tarea"/>
+    <TareaComponent titulo_tarea="Titulo de la tarea" msg="Comida"/>
   </div>
 </template>
 

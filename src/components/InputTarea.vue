@@ -3,14 +3,11 @@
         <form action="#">
          <p>{{ saluda }}</p>
         <label for="text">
-        <input type="text"
-          class="nombre"
-          v-on:input="saludar2"
-          name="text"
-          placeholder="Digite su nombre"
-        >
+    <input  class="nombre" type="text" v-on:input="saludar2" placeholder="Digite su nombre">
         <button class="send" @click.prevent="saludar">Enviar</button>
         </label>
+        <p>{{ saluda }}</p>
+         <p>Hola: {{ saluda1 }}</p>
         </form>
     </div>
 </template>

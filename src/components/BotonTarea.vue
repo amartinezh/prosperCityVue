@@ -1,6 +1,6 @@
 <template>
     <div class="boton">
-        <button class="contador" @click="sumar">Erisc {{ contar }}</button>
+        <button class="contador" @click="sumar">Contador {{ contar }}</button>
     </div>
 </template>
 
@@ -32,9 +32,10 @@ export default defineComponent({
     height: 50px;
     width: 150px;
     border:none;
-    background: rgb(164, 255, 89);
+    background: #3894a1;
     border-radius: 25px;
     font-weight: bold;
     margin: 10px 0;
+    color: #f0f1ee;
 }
 </style>

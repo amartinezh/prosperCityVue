@@ -2,7 +2,7 @@
     <div class="azul">
         <aside class="aside">
             <h1 class="titulo">HOLA SOMOS EL GRUPO AZUL</h1>
-            <h4>Los integrantes somos:</h4>
+            <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <li>Emanuel</li>
                 <li>Dayhana</li>
@@ -12,7 +12,7 @@
                 <li>jhon Henry</li>
                 <li>Andrea</li>
                 <li>Juliana</li>
-                <li>Erisc</li>
+                <li><router-link to="/Azul">Erisc</router-link></li>
             </ul>
         </aside>
         <section class="seccionCentral">
@@ -46,10 +46,21 @@ export default defineComponent({
     display: flex;
 }
 ul{
+    list-style: none;
     margin: 15px 0;
+    color: #2f404f;
 }
+
+ul li a{
+    text-decoration: none;
+    color: 2f404f;
+}
+ul li a:visited{
+    color: #2f404f;
+}
+
 .aside{
- background-color: #3894A1;
+ background-color: #C7dad3;
  height: 90vh;
  padding: 10px;
  color: #f0f1ee;

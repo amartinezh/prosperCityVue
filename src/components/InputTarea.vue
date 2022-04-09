@@ -7,8 +7,7 @@
             v-on:input="saludar2"
             placeholder="Digite su nombre"
         >
-        <button class="send" @click.prevent="saludar">Enviar</button>
-        </label>
+        </label><button class="send" @click.prevent="saludar">Enviar</button>
          <p class="respuesta">{{ saluda1 }}</p>
         </form>
     </div>
@@ -45,10 +44,11 @@ export default defineComponent({
     width: 300px;
     text-align: center;
     border:none;
-    background-color: gray;
+    background-color: #2f404f;
     margin: 15px 0;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    color:#f0f1ee
 }
 .nombre::placeholder{
     color:white;
@@ -57,7 +57,7 @@ export default defineComponent({
 .send {
     height: 50px;
     border:none;
-    background-color: yellow;
+    background-color: rgb(252, 217, 22);
     width: 120px;
     font-size: 1.1rem;
     border-top-right-radius: 25px;
@@ -66,6 +66,6 @@ export default defineComponent({
 .respuesta{
   color: rgb(121, 121, 121);
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 </style>

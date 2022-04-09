@@ -24,7 +24,8 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'TareaComponent',
   props: {
-    msg: String,
+    Msg: String,
+    titulo_tarea: String,
   },
 });
 </script>

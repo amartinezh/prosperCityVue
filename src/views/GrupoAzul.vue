@@ -10,11 +10,24 @@
             <li>Andy</li>
             <li>jhon Henry</li>
             <li>Andrea</li>
+            <li>Juliana</li>
             <li>Erisc</li>
         </ul>
         <p><i>Aqui abajo pondremos el componente:</i></p>
+        <BotonTarea palabra="Veces" />
     </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import BotonTarea from '@/components/BotonTarea.vue';
+
+export default defineComponent({
+  components: {
+    BotonTarea,
+  },
+});
+</script>
 
 <style scoped>
 .azul{

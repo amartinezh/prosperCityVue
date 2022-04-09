@@ -1,6 +1,6 @@
 <template>
     <div class="boton">
-        <button class="contador" @click="contar++">Erisc {{ contar }}</button>
+        <button class="contador" @click="sumar">Erisc {{ contar }}</button>
     </div>
 </template>
 
@@ -11,7 +11,15 @@ export default defineComponent({
   data() {
     return {
       contar: 0,
+      suma: 0,
+      resta: 0,
     };
+  },
+  methods: {
+    sumar() {
+      this.contar += 1;
+      this.resta -= 1;
+    },
   },
   props: {
     palabra: String,
@@ -22,9 +30,11 @@ export default defineComponent({
 <style scoped>
 .contador{
     height: 50px;
-    width: 120px;
+    width: 150px;
     border:none;
-    background: rgb(55, 136, 68);
+    background: rgb(164, 255, 89);
     border-radius: 25px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 </style>

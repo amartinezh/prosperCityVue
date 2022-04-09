@@ -3,6 +3,7 @@
     El dato que llega es --> {{ msg }}
   </div>
 </template>
+
 <script>
 export default {
   name: 'showComponent',
@@ -11,5 +12,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-</style>

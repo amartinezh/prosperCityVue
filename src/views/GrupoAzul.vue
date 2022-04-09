@@ -14,6 +14,7 @@
             <li>Erisc</li>
         </ul>
         <p><i>Aqui abajo pondremos el componente:</i></p>
+        <InputTarea />
         <BotonTarea palabra="Veces" />
     </div>
 </template>
@@ -21,10 +22,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
+import InputTarea from '@/components/InputTarea.vue';
 
 export default defineComponent({
   components: {
     BotonTarea,
+    InputTarea,
   },
 });
 </script>

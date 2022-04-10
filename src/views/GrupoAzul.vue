@@ -72,4 +72,9 @@ ul li a:visited{
     flex-direction: column;
     justify-content: center;
 }
+h1 {
+    margin-top: 40px;
+    color: #4856fd;
+    text-align: center;
+}
 </style>

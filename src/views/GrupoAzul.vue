@@ -15,6 +15,7 @@
                 <li>Andrea</li>
                 <li>Juliana</li>
                 <li>Andy</li>
+                <li>Alexis</li>
                 <li><router-link to="/Azul">Erisc</router-link></li>
                 </h3>
             </ul>
@@ -24,6 +25,7 @@
             <BotonTarea palabra="Veces" />
             <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea />
+            <comPalexis />
         </section>
     </div>
 </template>
@@ -32,11 +34,13 @@
 import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
+import comPalexis from '@/components/comPalexis.vue';
 
 export default defineComponent({
   components: {
     BotonTarea,
     InputTarea,
+    comPalexis,
   },
 });
 </script>

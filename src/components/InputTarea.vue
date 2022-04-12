@@ -8,7 +8,7 @@
             placeholder="Digite su nombre"
         >
         </label><button class="send" @click.prevent="saludar">Enviar</button>
-         <p class="respuesta">{{ saluda1 }}</p>
+         <p class="respuesta">{{ hola }} {{ saluda1 }}</p>
         </form>
     </div>
 </template>
@@ -21,6 +21,7 @@ export default defineComponent({
     return {
       saluda1: 'Aqui aparecerá tu nombre',
       saluda: '',
+      hola: '',
     };
   },
   methods: {
@@ -30,6 +31,7 @@ export default defineComponent({
     saludar() {
       if (this.saluda !== '') {
         this.saluda1 = this.saluda;
+        this.hola = 'Hola';
       } else {
         this.saluda1 = 'No has escrito nada aún';
       }

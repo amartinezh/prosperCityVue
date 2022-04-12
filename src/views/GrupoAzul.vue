@@ -2,17 +2,21 @@
     <div class="azul">
         <aside class="aside">
             <h1 class="titulo">HOLA SOMOS EL GRUPO AZUL</h1>
+            <br>
+            <br>
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
-                <li>Emanuel</li>
-                <li>Dayhana</li>
-                <li>Sebastian</li>
-                <li>Juan Felipe</li>
-                <li>Andy</li>
+                <h3>
                 <li>jhon Henry</li>
+                <li>Juan Felipe</li>
+                <li>Sebastian</li>
+                <li>Dayhana</li>
+                <li>Emanuel</li>
                 <li>Andrea</li>
                 <li>Juliana</li>
+                <li>Andy</li>
                 <li><router-link to="/Azul">Erisc</router-link></li>
+                </h3>
             </ul>
         </aside>
         <section class="seccionCentral">
@@ -49,14 +53,26 @@ ul{
     list-style: none;
     margin: 15px 0;
     color: #2f404f;
+    align-items: center;
+    display: flex;
+    Justify-content:center;
 }
 
 ul li a{
     text-decoration: none;
     color: 2f404f;
 }
+li:hover{
+    background-color: rgb(212, 197, 197);
+    border-radius: 9px;
+    padding: 5px;
+    margin:3px;
+}
 ul li a:visited{
     color: #2f404f;
+}
+li{
+    Justify-content:center;
 }
 
 .aside{

@@ -63,7 +63,7 @@ ul li a{
     color: 2f404f;
 }
 li:hover{
-    background-color: rgb(212, 197, 197);
+    background-color: aquamarine;
     border-radius: 9px;
     padding: 5px;
     margin:3px;
@@ -73,6 +73,9 @@ ul li a:visited{
 }
 li{
     Justify-content:center;
+    border-radius: 9px;
+    padding: 5px;
+    margin:3px;
 }
 
 .aside{

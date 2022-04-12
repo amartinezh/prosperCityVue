@@ -24,6 +24,8 @@
             <BotonTarea palabra="Veces" />
             <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea />
+
+            <sliderComponent />
         </section>
     </div>
 </template>
@@ -33,10 +35,14 @@ import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
 
+import sliderComponent from '@/components/sliderComponent.vue';
+
 export default defineComponent({
   components: {
     BotonTarea,
     InputTarea,
+    sliderComponent,
+
   },
 });
 </script>

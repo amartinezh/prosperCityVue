@@ -7,19 +7,21 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li> <a href="#" @click="jhonHenry"> Jhon Henry </a> </li>
-                <li> <a href="#" @click="juan"> Juan Felipe </a> </li>
-                <li> <a href="#" @click="sebastian"> Sebastian </a> </li>
-                <li> <a href="#" @click="dayhana"> Dayhana </a> </li>
+                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
+                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
+                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
+                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
                 <li> <a href="#" @click="emanuelBtn"> Emanuel </a> </li>
-                <li> <a href="#" @click="andrea"> Andrea </a> </li>
-                <li> <a href="#" @click="juliana"> Juliana </a> </li>
-                <li> <a href="#" @click="andy"> Andy </a> </li>
-                <li> <a href="#" @click="andy"> Erisc </a> </li>
+                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
+                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
+                <li> <a href="#" @click="andyBtn"> Andy </a> </li>
+                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
                 </h3>
             </ul>
         </aside>
         <section class="seccionCentral">
+            <p v-if="general">lo siento a un trabajo en mi componente</p>
             <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
             <BotonTarea palabra="Veces" v-if="estadoMostar"/>
             <p v-if="estadoMostar">
@@ -47,16 +49,59 @@ export default defineComponent({
     return {
       estadoMostar: true,
       emmanuel: false,
+      general: false,
     };
   },
   methods: {
-    jhonHenry() {
+    grupoazul() {
       this.estadoMostar = true;
+      this.emmanuel = false;
+      this.general = false;
+    },
+    jhonHenryBtn() {
+      this.general = true;
+      this.estadoMostar = false;
       this.emmanuel = false;
     },
     emanuelBtn() {
       this.emmanuel = true;
       this.estadoMostar = false;
+      this.general = false;
+    },
+    juanBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    eriscBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    andreaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    julianaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    dayhanaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    sebastianBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    andyBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
     },
   },
 });

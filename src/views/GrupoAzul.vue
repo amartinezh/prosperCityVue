@@ -7,25 +7,32 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li>jhon Henry</li>
-                <li>Juan Felipe</li>
-                <li>Sebastian</li>
-                <li>Dayhana</li>
-                <li>Emanuel</li>
-                <li>Andrea</li>
-                <li>Juliana</li>
-                <li>Andy</li>
-                <li>Alexis</li>
-                <li><router-link to="/Azul">Erisc</router-link></li>
+                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
+                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
+                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
+                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
+                <li> <a href="#" @click="emanuelBtn"> Emanuel </a> </li>
+                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
+                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
+                <li> <a href="#" @click="andyBtn"> Andy </a> </li>
+                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
+                <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
                 </h3>
             </ul>
         </aside>
+        <br>
+        <br>
         <section class="seccionCentral">
-            <p><i>Aqui abajo pondremos el componente:</i></p>
-            <BotonTarea palabra="Veces" />
-            <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
-            <InputTarea />
-            <comPalexis />
+            <p v-if="general">lo siento a un trabajo en mi componente</p>
+            <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
+            <BotonTarea palabra="Veces" v-if="estadoMostar"/>
+            <p v-if="estadoMostar">
+            <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
+            <InputTarea v-if="estadoMostar"/>
+            <ComponetEmmanuel v-if="emmanuel"/>
+             <sliderComponent />
+             <comPalexis />
         </section>
     </div>
 </template>
@@ -34,13 +41,77 @@
 import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
+import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
+import sliderComponent from '@/components/sliderComponent.vue';
 import comPalexis from '@/components/comPalexis.vue';
 
 export default defineComponent({
   components: {
     BotonTarea,
     InputTarea,
+    ComponetEmmanuel,
+    sliderComponent,
     comPalexis,
+  },
+
+  data() {
+    return {
+      estadoMostar: true,
+      emmanuel: false,
+      general: false,
+    };
+  },
+  methods: {
+    grupoazul() {
+      this.estadoMostar = true;
+      this.emmanuel = false;
+      this.general = false;
+    },
+    jhonHenryBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    emanuelBtn() {
+      this.emmanuel = true;
+      this.estadoMostar = false;
+      this.general = false;
+    },
+    juanBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    eriscBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    andreaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    julianaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    dayhanaBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    sebastianBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
+    andyBtn() {
+      this.general = true;
+      this.estadoMostar = false;
+      this.emmanuel = false;
+    },
   },
 });
 </script>
@@ -71,6 +142,8 @@ li:hover{
     border-radius: 9px;
     padding: 5px;
     margin:3px;
+    -moz-border-radius: 70%;
+    -webkit-border-radius: 700%;
 }
 ul li a:visited{
     color: #2f404f;

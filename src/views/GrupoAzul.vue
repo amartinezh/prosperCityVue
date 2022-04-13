@@ -15,17 +15,19 @@
                 <li>Andrea</li>
                 <li>Juliana</li>
                 <li>Andy</li>
+                <li><router-link to="/about">Alexis</router-link></li>
                 <li><router-link to="/Azul">Erisc</router-link></li>
                 </h3>
             </ul>
         </aside>
+        <br>
+        <br>
         <section class="seccionCentral">
-            <p><i>Aqui abajo pondremos el componente:</i></p>
-            <BotonTarea palabra="Veces" />
-            <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
-            <InputTarea />
-
-            <sliderComponent />
+                <p><i>Aqui abajo pondremos el componente:</i></p>
+                <BotonTarea palabra="Veces" />
+                <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
+                <InputTarea />
+                <sliderComponent />
         </section>
     </div>
 </template>
@@ -34,7 +36,6 @@
 import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
-
 import sliderComponent from '@/components/sliderComponent.vue';
 
 export default defineComponent({
@@ -42,7 +43,6 @@ export default defineComponent({
     BotonTarea,
     InputTarea,
     sliderComponent,
-
   },
 });
 </script>
@@ -73,6 +73,8 @@ li:hover{
     border-radius: 9px;
     padding: 5px;
     margin:3px;
+    -moz-border-radius: 70%;
+    -webkit-border-radius: 700%;
 }
 ul li a:visited{
     color: #2f404f;

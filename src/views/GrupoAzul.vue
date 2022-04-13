@@ -150,7 +150,7 @@ li{
  padding: 10px;
  color: #f0f1ee;
 }
-.seccionCentral{
+.seccionCpwdentral{
     background-color: #f0f1ee;
     width: 80vw;
     display: flex;

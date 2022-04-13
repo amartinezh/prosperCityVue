@@ -38,4 +38,8 @@ export default defineComponent({
     margin: 10px 0;
     color: #f0f1ee;
 }
+
+.contador:hover{
+  background-color:#9c38a1;
+}
 </style>

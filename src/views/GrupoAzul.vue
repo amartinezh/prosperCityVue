@@ -7,23 +7,25 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li>jhon Henry</li>
-                <li>Juan Felipe</li>
-                <li>Sebastian</li>
-                <li>Dayhana</li>
-                <li>Emanuel</li>
-                <li>Andrea</li>
-                <li>Juliana</li>
-                <li>Andy</li>
-                <li><router-link to="/Azul">Erisc</router-link></li>
+                <li> <a href="#" @click="jhonHenry"> Jhon Henry </a> </li>
+                <li> <a href="#" @click="juan"> Juan Felipe </a> </li>
+                <li> <a href="#" @click="sebastian"> Sebastian </a> </li>
+                <li> <a href="#" @click="dayhana"> Dayhana </a> </li>
+                <li> <a href="#" @click="emanuelBtn"> Emanuel </a> </li>
+                <li> <a href="#" @click="andrea"> Andrea </a> </li>
+                <li> <a href="#" @click="juliana"> Juliana </a> </li>
+                <li> <a href="#" @click="andy"> Andy </a> </li>
+                <li> <a href="#" @click="andy"> Erisc </a> </li>
                 </h3>
             </ul>
         </aside>
         <section class="seccionCentral">
-            <p><i>Aqui abajo pondremos el componente:</i></p>
-            <BotonTarea palabra="Veces" />
-            <p><i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
-            <InputTarea />
+            <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
+            <BotonTarea palabra="Veces" v-if="estadoMostar"/>
+            <p v-if="estadoMostar">
+            <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
+            <InputTarea v-if="estadoMostar"/>
+            <ComponetEmmanuel v-if="emmanuel"/>
         </section>
     </div>
 </template>
@@ -32,11 +34,30 @@
 import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
+import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
 
 export default defineComponent({
   components: {
     BotonTarea,
     InputTarea,
+    ComponetEmmanuel,
+  },
+
+  data() {
+    return {
+      estadoMostar: true,
+      emmanuel: false,
+    };
+  },
+  methods: {
+    jhonHenry() {
+      this.estadoMostar = true;
+      this.emmanuel = false;
+    },
+    emanuelBtn() {
+      this.emmanuel = true;
+      this.estadoMostar = false;
+    },
   },
 });
 </script>

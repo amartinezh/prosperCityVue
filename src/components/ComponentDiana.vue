@@ -1,6 +1,6 @@
 <template>
  <div class="ComponentDiana">
-  <h1>Fundadores de Prospercity</h1>
+  <h1 class="diana">Fundadores de Prospercity</h1>
   <h2>Oscar Giraldo y Steven Muñoz</h2>
   <img src="../assets/Prospercity.jpg" alt="Prospercity">
   <h2>Sueñan con democratizar el acceso a la educación y prosperidad en Latinoamérica.</h2>
@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <style>
-h1 {
+h1 .dina{
  margin-top: 250px;
  color: #4856fd;
  text-align: center;

@@ -158,7 +158,7 @@ li{
     justify-content: center;
 }
 h1 {
-    margin-top: 40px;
+    margin-top: 4px;
     color: #4856fd;
     text-align: center;
 }

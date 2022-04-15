@@ -7,17 +7,15 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
-                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
-                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
-                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
-                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
-                <li> <a href="#" @click="emanuelBtn"> Emanuel </a> </li>
-                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
-                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
-                <li> <a href="#" @click="andyBtn"> Andy </a> </li>
-                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
-                <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
+                <li> <a href="https://app.prospercity.co/my_page/jhon-henry-casta%C3%B1o-garcia-1639435108074x182614376804253700" target="_blank" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/juan-felipe-torralba-montes-1635381822695x369685632296157200"  target="_blank" @click="juanBtn"> Juan Felipe </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/sebasti%C3%A1n-l%C3%B3pez-giraldo-1629840136778x374323184539271200" target="_blank" @click="sebastianBtn"> Sebastian </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/dayhana-molina-1635977339924x995599151822274600" target="_blank" @click="dayhanaBtn"> Dayhana </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/emmanuel-renteria-mena-1629400481217x103809699316498430" target="_blank" @click="emanuelBtn"> Emmanuel </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/andrea-mejia-duque-1639260780639x666226227907133400" target="_blank" @click="andreaBtn"> Andrea </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/juliana-londo%C3%B1o-murillo-1633029259110x232525092271685630" target="_blank" @click="julianaBtn"> Juliana </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/erisc-1633536586989x405105810804834300" target="_blank" @click="eriscBtn"> Erisc </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/yonier-alexis-quiceno-rodr%C3%ADguez-1635700765552x825459024826466300" target="_blank" @click="alexisBtn"> Alexis </a></li>
                 </h3>
             </ul>
         </aside>
@@ -61,58 +59,6 @@ export default defineComponent({
       general: false,
     };
   },
-  methods: {
-    grupoazul() {
-      this.estadoMostar = true;
-      this.emmanuel = false;
-      this.general = false;
-    },
-    jhonHenryBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    emanuelBtn() {
-      this.emmanuel = true;
-      this.estadoMostar = false;
-      this.general = false;
-    },
-    juanBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    eriscBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    andreaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    julianaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    dayhanaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    sebastianBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    andyBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-  },
 });
 </script>
 
@@ -135,10 +81,10 @@ ul{
 
 ul li a{
     text-decoration: none;
-    color: 2f404f;
+    color: #2f404f;
 }
 li:hover{
-    background-color: aquamarine;
+    background-color: rgb(121, 97, 219);
     border-radius: 9px;
     padding: 5px;
     margin:3px;
@@ -157,7 +103,6 @@ li{
 
 .aside{
  background-color: #C7dad3;
- height: 90vh;
  padding: 10px;
  color: #f0f1ee;
 }

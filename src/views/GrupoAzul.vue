@@ -32,6 +32,7 @@
             />
              <sliderComponent v-if="general"/>
              <comPalexis v-if="general"/>
+             <ComponentFooter />
         </section>
     </div>
 </template>
@@ -43,6 +44,7 @@ import InputTarea from '@/components/InputTarea.vue';
 import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
 import sliderComponent from '@/components/sliderComponent.vue';
 import comPalexis from '@/components/comPalexis.vue';
+import ComponentFooter from '@/components/ComponentFooter.vue';
 
 export default defineComponent({
   components: {
@@ -51,6 +53,7 @@ export default defineComponent({
     ComponetEmmanuel,
     sliderComponent,
     comPalexis,
+    ComponentFooter,
   },
 
   data() {
@@ -110,7 +113,7 @@ li{
 }
 
 .aside{
- background-color: #C7dad3;
+ background-color: #93c7e5;
  padding: 10px;
  color: #f0f1ee;
 }

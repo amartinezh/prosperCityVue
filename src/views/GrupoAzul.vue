@@ -7,19 +7,20 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
-                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
-                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
-                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
-                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
-                <li> <a href="#" @click="emanuelBtn"> Emanuel </a> </li>
-                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
-                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
-                <li> <a href="#" @click="andyBtn"> Andy </a> </li>
-                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/jhon-henry-casta%C3%B1o-garcia-1639435108074x182614376804253700" target="_blank" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/juan-felipe-torralba-montes-1635381822695x369685632296157200"  target="_blank" @click="juanBtn"> Juan Felipe </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/sebasti%C3%A1n-l%C3%B3pez-giraldo-1629840136778x374323184539271200" target="_blank" @click="sebastianBtn"> Sebastian </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/dayhana-molina-1635977339924x995599151822274600" target="_blank" @click="dayhanaBtn"> Dayhana </a> </li>
+                <li> <a href="#" @click="emanuelBtn"> Emmanuel </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/andrea-mejia-duque-1639260780639x666226227907133400" target="_blank" @click="andreaBtn"> Andrea </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/juliana-londo%C3%B1o-murillo-1633029259110x232525092271685630" target="_blank" @click="julianaBtn"> Juliana </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/erisc-1633536586989x405105810804834300" target="_blank" @click="eriscBtn"> Erisc </a> </li>
+                <li> <a href="https://app.prospercity.co/my_page/yonier-alexis-quiceno-rodr%C3%ADguez-1635700765552x825459024826466300" target="_blank" @click="alexisBtn"> Alexis </a></li>
                 </h3>
             </ul>
         </aside>
+        <br>
+        <br>
         <section class="seccionCentral">
             <p v-if="general">lo siento a un trabajo en mi componente</p>
             <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
@@ -27,7 +28,10 @@
             <p v-if="estadoMostar">
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea v-if="estadoMostar"/>
-            <ComponetEmmanuel v-if="emmanuel"/>
+            <ComponetEmmanuel v-if="emmanuel"
+            />
+             <sliderComponent v-if="general"/>
+             <comPalexis v-if="general"/>
         </section>
     </div>
 </template>
@@ -37,12 +41,16 @@ import { defineComponent } from 'vue';
 import BotonTarea from '@/components/BotonTarea.vue';
 import InputTarea from '@/components/InputTarea.vue';
 import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
+import sliderComponent from '@/components/sliderComponent.vue';
+import comPalexis from '@/components/comPalexis.vue';
 
 export default defineComponent({
   components: {
     BotonTarea,
     InputTarea,
     ComponetEmmanuel,
+    sliderComponent,
+    comPalexis,
   },
 
   data() {
@@ -53,55 +61,10 @@ export default defineComponent({
     };
   },
   methods: {
-    grupoazul() {
-      this.estadoMostar = true;
-      this.emmanuel = false;
-      this.general = false;
-    },
-    jhonHenryBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
     emanuelBtn() {
+      this.estadoMostar = false;
       this.emmanuel = true;
-      this.estadoMostar = false;
       this.general = false;
-    },
-    juanBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    eriscBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    andreaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    julianaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    dayhanaBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    sebastianBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
-    },
-    andyBtn() {
-      this.general = true;
-      this.estadoMostar = false;
-      this.emmanuel = false;
     },
   },
 });
@@ -126,13 +89,15 @@ ul{
 
 ul li a{
     text-decoration: none;
-    color: 2f404f;
+    color: #2f404f;
 }
 li:hover{
-    background-color: aquamarine;
+    background-color: rgb(121, 97, 219);
     border-radius: 9px;
     padding: 5px;
     margin:3px;
+    -moz-border-radius: 70%;
+    -webkit-border-radius: 700%;
 }
 ul li a:visited{
     color: #2f404f;
@@ -146,7 +111,6 @@ li{
 
 .aside{
  background-color: #C7dad3;
- height: 90vh;
  padding: 10px;
  color: #f0f1ee;
 }

@@ -28,6 +28,29 @@ export default defineComponent({
   components: {
     previewComponent,
   },
+  data() {
+    return {
+      profile: {
+        name: 'Leonidas Esteban',
+        photo: 'https://pbs.twimg.com/profile_images/1324801908851298314/IAhTiaPE_400x400.jpg',
+        description: 'Aprende a programar desde cero y gratis 👇',
+      },
+      links: [
+        {
+          id: 'asdasd',
+          link: 'https://www.youtube.com/LeonidasEsteban',
+          title: 'Youtube',
+          thumbnail: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
+        },
+        {
+          id: 'qweqw',
+          link: 'https://www.instagram.com/LeonidasEsteban/',
+          title: 'Instagram',
+          thumbnail: 'https://cdn-icons-png.flaticon.com/512/2111/2111463.png',
+        },
+      ],
+    };
+  },
 });
 </script>
 <style>

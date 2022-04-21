@@ -16,17 +16,20 @@
     </main>
   </div>
   <previewComponent/>
+  <anaAddLink/>
 </template>
 
 <script lang="ts">
 
 import previewComponent from '@/components/previewComponent.vue';
+import anaAddLink from '@/components/anaAddLink.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'LinkTreeRojo',
   components: {
     previewComponent,
+    anaAddLink,
   },
 });
 </script>

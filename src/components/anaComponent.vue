@@ -1,5 +1,4 @@
 <template>
-<div>
   <h2>Contenido</h2>
   <nav>
     <ul>
@@ -30,7 +29,6 @@
       el costo de la educación y el déficit de talento.</p>
       <p>Inscribete en <u>www.app.prospercity.co</u></p>
   </section>
-</div>
 </template>
 <script>
 import { defineComponent } from 'vue';

@@ -10,13 +10,13 @@
           <div class="edit-profile">Editar perfil</div>
         </div>
         <previewComponent/>
-        <div class="add-link">Add link</div>
+        <div class="add-link">Add link
+          <anaAddLink/>
+        </div>
         <div class="link-list">Link List</div>
       </div>
     </main>
   </div>
-  <previewComponent/>
-  <anaAddLink/>
 </template>
 
 <script lang="ts">

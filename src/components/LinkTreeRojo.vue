@@ -15,7 +15,6 @@
       </div>
     </main>
   </div>
-  <previewComponent/>
 </template>
 
 <script lang="ts">

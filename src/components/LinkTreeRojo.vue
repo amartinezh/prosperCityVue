@@ -10,7 +10,7 @@
           <div class="edit-profile">Editar perfil</div>
         </div>
         <previewComponent v-bind:profile="profile" v-bind:links="links"/>
-        <div class="add-link">Add link</div>
+        <div class="add-link">Add Link <anaLink/></div>
         <div class="link-list">Link List</div>
       </div>
     </main>

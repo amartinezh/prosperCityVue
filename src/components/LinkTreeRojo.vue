@@ -10,7 +10,9 @@
           <div class="edit-profile">Editar perfil</div>
         </div>
         <previewComponent/>
-        <div class="add-link">Add link</div>
+        <div class="add-link">Add link
+          <anaLink/>
+        </div>
         <div class="link-list">Link List</div>
       </div>
     </main>
@@ -20,12 +22,14 @@
 <script lang="ts">
 
 import previewComponent from '@/components/previewComponent.vue';
+import anaLink from '@/components/anaLink.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'LinkTreeRojo',
   components: {
     previewComponent,
+    anaLink,
   },
   data() {
     return {

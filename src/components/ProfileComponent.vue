@@ -1,81 +1,130 @@
 <template>
   <div class="profile">
     <div class="user">
-      <img :src="image" alt="
-      profile icon" class="rounded-circle img">
+      <img
+        :src="photo" alt="not founded" class="rounded-circle img"
+      />
       <div class="content">
-        <p class="name">{{name}}</p>
-        <p class="description">{{description}}</p>
+        <p class="name">{{ name }}</p>
+        <p class="description">{{ description }}</p>
       </div>
-      <i class="bi bi-pencil" data-bs-toggle="modal" data-bs-target=
-      "#exampleModal" data-bs-whatever="@mdo" style="width: 20px; height: 20px"></i>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby=
-        "exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
-                <button type="button" class="btn-close" data-bs-dismiss=
-                "modal" aria-label="Close" @click="clear"></button>
-              </div>
-              <div class="modal-body">
-                <img :src="image" alt="
-                profile icon" class="rounded-circle img2">
-                <form>
-                  <div class="mb-3">
-                  <label for="recipient-image" class="col-form-label">
-                    Image:
-                    <input type="text" class="form-control" id="recipient-image" v-model="image">
+      <i
+        class="bi bi-pencil"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+      ></i>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                :src="photo" alt="not founded" class="rounded-circle img2"
+              />
+              <form>
+                <div class="mb-2">
+                  <label for="recipient-photo" class="col-form-label">
+                    Image(url)
+                    <input
+                      type="text" class="form-control" id=
+                      "recipient-photo" v-model="photoData"
+                    />
                   </label>
-                  </div>
-                  <div class="mb-3">
+                </div>
+                <div class="mb-2">
                   <label for="recipient-name" class="col-form-label">
                     Name:
-                    <input type="text" class="form-control" id="recipient-name" v-model="name">
+                    <input
+                      type="text" class="form-control" id=
+                      "recipient-name" v-model="nameData"
+                    />
                   </label>
-                  </div>
-                  <div class="mb-3">
+                </div>
+                <div class="mb-2 ms-0">
                   <label for="recipient-description" class="col-form-label">
                     Description:
-                    <input type="text" class="form-control" id=
-                    "recipient-description" v-model="description">
+                    <input
+                      type="text" class="form-control" id=
+                      "recipient-description" v-model="descriptionData" maxlength="42"
+                    />
                   </label>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" @click="updateInfo" class=
-                "btn btn-primary" data-bs-dismiss=
-                "modal" aria-label="Close">Save and close</button>
-              </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                @click="updateInfo"
+                class="btn btn-outline-primary"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Save and close
+              </button>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'ProfileComponent',
 
+  beforeMount() {
+    this.nameData = this.name;
+    this.photoData = this.photo;
+    this.descriptionData = this.description;
+  },
+
   data() {
     return {
-      name: 'Leonidas Esteban',
-      description: 'alllinks.co/leonidasesteban.com',
-      image: 'https://i.ibb.co/yVGxFPR/2.png',
+      nameData: '',
+      photoData: '',
+      descriptionData: '',
     };
+  },
+
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    photo: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
   },
 
   methods: {
     updateInfo() {
       this.$emit('getData', {
-        name: this.name,
-        description: this.description,
-        image: this.image,
+        name: this.nameData,
+        description: this.descriptionData,
+        photo: this.photoData,
       });
     },
   },
@@ -83,7 +132,6 @@ export default defineComponent({
 </script>
 
 <style>
-
 .user {
   display: flex;
   flex-direction: row;
@@ -91,7 +139,7 @@ export default defineComponent({
   padding: 8px;
   width: 60%;
   height: 80px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
 
@@ -116,21 +164,22 @@ export default defineComponent({
 }
 
 .name {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
   color: #000000;
   margin-bottom: 0px;
+  font-size: 1rem;
 }
 
 .description {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
   color: #000000;
+  font-size: 0.7rem;
 }
 
 .bi {
   color: blue;
-  margin-left: 22px;
+  margin-left: 27px;
 }
-
 </style>

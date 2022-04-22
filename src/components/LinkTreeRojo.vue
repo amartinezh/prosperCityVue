@@ -9,7 +9,7 @@
           <div class="profile">Ver perfil</div>
           <div class="edit-profile">Editar perfil</div>
         </div>
-        <previewComponent/>
+        <previewComponent v-bind:profile="profile" v-bind:links="links"/>
         <div class="add-link">Add link</div>
         <div class="link-list">Link List</div>
       </div>
@@ -80,7 +80,10 @@ export default defineComponent({
       background: rgb(205, 255, 205);
     }
     .preview-container {
-      background: rgb(193, 214, 255);
+      position: relative;
+      width: 1366px;
+      height: 768px;
+      background: #FBF9FB;
     }
     .add-link {
       background: rgb(255, 255, 186);

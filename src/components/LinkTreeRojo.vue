@@ -1,19 +1,20 @@
 <template>
-<div class="linktree-container">
-    <aside class="aside">
-      aside
-    </aside>
+  <div class="linktree-container">
+    <DianaSidebar v-bind:profile="profile" />
     <main class="main">
       <div class="main-container">
         <div class="profile-container">
           <div class="profile">Ver perfil</div>
           <div class="edit-profile">Editar perfil</div>
         </div>
+        <previewComponent v-bind:profile="profile" v-bind:links="links"/>
+        <div class="add-link">Add Link <anaLink/></div>
+        <div class="link-list">Link List</div>
         <previewComponent/>
-        <div class="add-link">Add link
+        <div class="add-link">
           <anaLink/>
         </div>
-        <div class="link-list">Link List</div>
+        <LinkList v-bind:links="links" />
       </div>
     </main>
   </div>
@@ -23,6 +24,8 @@
 
 import previewComponent from '@/components/previewComponent.vue';
 import anaLink from '@/components/anaLink.vue';
+import DianaSidebar from '@/components/DianaSidebar.vue';
+import LinkList from '@/components/MikeLinkList.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -30,6 +33,8 @@ export default defineComponent({
   components: {
     previewComponent,
     anaLink,
+    DianaSidebar,
+    LinkList,
   },
   data() {
     return {
@@ -58,23 +63,25 @@ export default defineComponent({
 </script>
 <style>
     root {
-       --blue: blue;
-       --red: red;
+      --blue: blue;
+      --red: red;
+    }
+    * {
+      font-family: 'Inter', Arial, sans-serif;
     }
     .linktree-container {
       display: grid;
       font-family: Arial, Helvetica, sans-serif;
       grid-template-rows: 1fr 60px;
       grid-template-columns: 1fr;
-      height: 100vh;
       margin: 0;
     }
     .aside{
-      background: #ffd2d2;
       grid-area: 2 / 1 / 3 / 2;
     }
     .main {
       background: #F9F9F9;
+      padding: 0 16px;
     }
     .main-container {
       max-width: 740px;
@@ -84,13 +91,13 @@ export default defineComponent({
       background: rgb(205, 255, 205);
     }
     .preview-container {
-      background: rgb(193, 214, 255);
+      position: relative;
+      width: 1366px;
+      height: 768px;
+      background: #FBF9FB;
     }
     .add-link {
       background: #FFFF;
-    }
-    .link-list {
-      background: rgb(255, 196, 255);
     }
     @media (min-width: 768px) {
       .linktree-container {
@@ -98,11 +105,11 @@ export default defineComponent({
         grid-template-rows: 1fr;
       }
       .main {
-        height: 100vh;
+        height: calc(100vh - 100px);
       }
       .aside {
         grid-area: initial;
-        height: 100vh;
+        height: calc(100vh - 100px);
       }
     }
 </style>

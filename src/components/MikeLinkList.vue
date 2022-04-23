@@ -37,13 +37,14 @@ export default {
     flex: 1;
     text-align: center;
   }
-  .link-item {
+ .link-item {
     cursor: pointer;
     padding: 16px;
     background: white;
-    box-shadow: 0px 11.1704px 20.7037px rgb(0 0 0 / 2%), 0px 5.
-    8px 10.5625px rgb(0 0 0 / 2%), 0px 2.36296px 5.2963px rgb(0 0 0 / 2%), 0px 0.
-    537037px 2.55787px rgb(0 0 0 / 1%);
+    box-shadow: 0px 11.1704px 20.7037px rgb(0 0 0 / 2%),
+      0px 5.8px 10.5625px rgb(0 0 0 / 2%),
+      0px 2.36296px 5.2963px rgb(0 0 0 / 2%),
+      0px 0.537037px 2.55787px rgb(0 0 0 / 1%);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;

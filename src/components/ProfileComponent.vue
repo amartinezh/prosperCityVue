@@ -137,7 +137,7 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   padding: 8px;
-  width: 60%;
+  width: 100%;
   height: 80px;
   background: #ffffff;
   border-radius: 8px;
@@ -147,7 +147,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 219px;
+  width: 300px;
   height: 42px;
 }
 
@@ -180,6 +180,6 @@ export default defineComponent({
 
 .bi {
   color: blue;
-  margin-left: 27px;
+  margin-left: 270px;
 }
 </style>

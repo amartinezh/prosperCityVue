@@ -87,7 +87,7 @@ export default defineComponent({
       background: rgb(193, 214, 255);
     }
     .add-link {
-      background: rgb(255, 255, 186);
+      background: #FFFF;
     }
     .link-list {
       background: rgb(255, 196, 255);

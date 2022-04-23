@@ -1,6 +1,6 @@
 <template>
   <aside class="aside">
-    <img src="src\assets\linktree-logo.png" alt="Logo de la aplicacion" class="logo">
+    <img src="../assets/Loogo.png" alt="Logo de la aplicacion" class="logo">
     <div class="profile">
       <img width="64" height="64" :src="profile.photo" alt="Foto de mike" class="photo">
       <p class="name">{{profile.name}}</p>
@@ -39,6 +39,17 @@ export default {
     width: 64px;
     height: 64px;
     margin-bottom: 8px;
+  }
+  .logo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0px;
+   position: static;
+   width: 116px;
+   height: 26px;
+   left: 0px;
+   top: 0px;
   }
   .name {
     font-weight: 700;

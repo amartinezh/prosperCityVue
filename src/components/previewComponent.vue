@@ -30,6 +30,7 @@ export default {
   },
 };
 </script>
+<<<<<<< HEAD
 <style>
  .container{
   display: flex;
@@ -88,3 +89,56 @@ export default {
   margin: 16px 0px;
  }
 </style>
+=======
+
+  <style>
+    root {
+       --blue: blue;
+       --red: red;
+    }
+    body {
+      display: grid;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-rows: 1fr 60px;
+      grid-template-columns: 1fr;
+      height: 100vh;
+      margin: 0;
+    }
+    .aside{
+      background: #ffd2d2;
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .main {
+      background: #F9F9F9;
+    }
+    .main-container {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .profile-container {
+      background: rgb(205, 255, 205);
+    }
+    .preview-container {
+      background: rgb(193, 214, 255);
+    }
+    .add-link {
+      background: rgb(255, 255, 186);
+    }
+    .link-list {
+      background: rgb(255, 196, 255);
+    }
+    @media (min-width: 768px) {
+      body {
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 1fr;
+      }
+      .main {
+        height: 100vh;
+      }
+      .aside {
+        grid-area: initial;
+        height: 100vh;
+      }
+    }
+  </style>
+>>>>>>> 90d7342b703d1e1fd27abee81178b631cb4a8974

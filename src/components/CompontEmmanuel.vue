@@ -2,14 +2,9 @@
 <div>
  <h1 class="prueba">Emmanuel Renteria Mena</h1>
  <br/>
-  <label for="text">
-    <input  class="nombre"
-        type="text"
-        v-on:change="registro"
-        placeholder="Digite su nombre"
-        v-model="peronsaInp"
-    >
-  </label>
+  <InputTarea v-on:change="registro" />
+  <br>
+  <br>
 <ul>
   <h1 v-for="(persona) in persona" :key="persona.id">Hola {{ persona }}</h1>
 </ul>
@@ -20,8 +15,15 @@
 <script>
 
 import { defineComponent } from 'vue';
+import InputTarea from '@/components/InputVue.vue';
 
 export default defineComponent({
+  components: {
+    InputTarea,
+  },
+  props: {
+
+  },
   data() {
     return {
       peronsaInp: '',
@@ -41,9 +43,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-.prueba {
-  margin:0px;
-}
-</style>

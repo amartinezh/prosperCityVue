@@ -1,16 +1,16 @@
 <template>
-    <div class="input">
-        <form action="#">
-        <label for="text">
-        <input  class="nombre"
-            type="text"
-            v-on:input="saludar2"
-            placeholder="Digite su nombre"
-        >
-        </label><button class="send" @click.prevent="saludar">Enviar</button>
-         <p class="respuesta">{{ hola }} {{ saluda1 }}</p>
-        </form>
-    </div>
+  <div class="input">
+    <form action="#">
+    <label for="text">
+    <input  class="nombre"
+      type="text"
+      v-on:input="saludar2"
+      placeholder="Digite su nombre"
+    >
+    </label><button class="send" @click.prevent="saludar">Enviar</button>
+      <p class="respuesta">{{ hola }} {{ saluda1 }}</p>
+    </form>
+  </div>
 </template>
 
 <script lang="ts">

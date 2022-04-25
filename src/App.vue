@@ -8,7 +8,18 @@
     <router-link to="/calculadora_prosper">Sumar</router-link>
   </nav>
   <router-view />
+  <ComponentFooter />
 </template>
+
+<script>
+import ComponentFooter from '@/components/ComponentFooter.vue';
+
+export default ({
+  components: {
+    ComponentFooter,
+  },
+});
+</script>
 
 <style>
 * {

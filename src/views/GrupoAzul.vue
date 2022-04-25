@@ -19,8 +19,6 @@
                 </h3>
             </ul>
         </aside>
-        <br>
-        <br>
         <section class="seccionCentral">
             <p v-if="general">lo siento a un trabajo en mi componente</p>
             <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
@@ -28,11 +26,9 @@
             <p v-if="estadoMostar">
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea v-if="estadoMostar"/>
-            <ComponetEmmanuel v-if="emmanuel"
-            />
+            <ComponetEmmanuel v-if="emmanuel" />
              <sliderComponent v-if="general"/>
              <comPalexis v-if="general"/>
-             <ComponentFooter />
         </section>
     </div>
 </template>
@@ -44,7 +40,6 @@ import InputTarea from '@/components/InputTarea.vue';
 import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
 import sliderComponent from '@/components/sliderComponent.vue';
 import comPalexis from '@/components/comPalexis.vue';
-import ComponentFooter from '@/components/ComponentFooter.vue';
 
 export default defineComponent({
   components: {
@@ -53,7 +48,6 @@ export default defineComponent({
     ComponetEmmanuel,
     sliderComponent,
     comPalexis,
-    ComponentFooter,
   },
 
   data() {
@@ -74,6 +68,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 .titulo{
     color: #2f404f;
 }
@@ -113,9 +108,9 @@ li{
 }
 
 .aside{
- background-color: #93c7e5;
- padding: 10px;
- color: #f0f1ee;
+    background-color: #93c7e5;
+    padding: 10px;
+    color: #f0f1ee;
 }
 .seccionCentral{
     background-color: #f0f1ee;

@@ -6,6 +6,7 @@
             type="text"
             v-on:input="saludar2"
             placeholder="Digite su nombre"
+            @keyup.enter="saludar2"
         >
         </label><button class="send" @click.prevent="saludar">Enviar</button>
          <p class="respuesta">{{ hola }} {{ saluda1 }}</p>

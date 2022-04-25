@@ -6,10 +6,6 @@
           <li><h4>Síguenos en</h4></li>
           <li><a href="https://www.facebook.com/Prospercity-109390181569422/about/?ref=page_internal" target="_blank"><img class="face" src="../assets/facebook.png" alt="facebook"></a><a href="https://instagram.com/prospercity.co?igshid=YmMyMTA2M2Y=" target="_blank"><img class="insta" src="../assets/instagram.png" alt="Instagram"></a></li>
         </ul>
-        <ul>
-          <li><b><h4> página oficial:</h4></b></li>
-          <li><a href="https://www.prospercity.co/" target="_blank"><img class="prosper" src="../assets/logo_p.jpg" alt="ProsperCity"></a></li>
-        </ul>
       </div>
       <div class="nosotros">
         <ul>
@@ -29,6 +25,12 @@
           <li><b>Direccion:</b></li>
           <li>Cra. 23c #62-72 Oficina 507, Manizales, Caldas</li>
         </ul>
+      </div>
+      <div>
+          <ul>
+            <li><b><h4>Página oficial</h4></b></li>
+            <li><a href="https://www.prospercity.co/" target="_blank"><img class="prosper" src="../assets/logo_p.jpg" alt="ProsperCity"></a></li>
+          </ul>
       </div>
     </footer>
   </div>
@@ -52,25 +54,26 @@ a{
 
 .prosper{
   margin: 10px;
-  width: 120px;
+  width: 130px;
   height: 30px;
+  border-radius: 20px;
 }
 .insta{
     margin: 0px auto;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 20%;
 }
 .face{
     margin: 0px auto;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 20%;
 }
 .wrapper {
   /* display: grid;
   grid-template-columns: 56rem repeat(2,9px) 5rem; */
-  padding: 80px;
+  padding: 30px;
   display: flex;
   justify-content:center;
   background: #6cb5df;

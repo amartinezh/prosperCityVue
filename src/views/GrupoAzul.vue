@@ -7,23 +7,25 @@
             <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
                 <h3>
-                <li> <a href="https://app.prospercity.co/my_page/jhon-henry-casta%C3%B1o-garcia-1639435108074x182614376804253700" target="_blank" @click="jhonHenryBtn"> Jhon Henry </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/juan-felipe-torralba-montes-1635381822695x369685632296157200"  target="_blank" @click="juanBtn"> Juan Felipe </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/sebasti%C3%A1n-l%C3%B3pez-giraldo-1629840136778x374323184539271200" target="_blank" @click="sebastianBtn"> Sebastian </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/dayhana-molina-1635977339924x995599151822274600" target="_blank" @click="dayhanaBtn"> Dayhana </a> </li>
-                <li> <a href="#" @click="emanuelBtn"> Emmanuel </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/andrea-mejia-duque-1639260780639x666226227907133400" target="_blank" @click="andreaBtn"> Andrea </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/juliana-londo%C3%B1o-murillo-1633029259110x232525092271685630" target="_blank" @click="julianaBtn"> Juliana </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/erisc-1633536586989x405105810804834300" target="_blank" @click="eriscBtn"> Erisc </a> </li>
-                <li> <a href="https://app.prospercity.co/my_page/yonier-alexis-quiceno-rodr%C3%ADguez-1635700765552x825459024826466300" target="_blank" @click="alexisBtn"> Alexis </a></li>
+                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
+                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
+                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
+                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
+                <li> <a href="#" @click="emmanuelBtn"> Emmanuel </a> </li>
+                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
+                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
+                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
+                <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
                 </h3>
             </ul>
         </aside>
         <section class="seccionCentral">
-            <p v-if="general">lo siento a un trabajo en mi componente</p>
-            <p v-if="estadoMostar"><i>Aqui abajo pondremos el componente:</i></p>
-            <BotonTarea palabra="Veces" v-if="estadoMostar"/>
-            <p v-if="estadoMostar">
+            <sliderComponent v-if="generalComp"/>
+            <p v-if="estadoMostarComp">lo siento a un trabajo en mi componente</p>
+            <p v-if="ocultosComp"><i>Aqui abajo pondremos el componente:</i></p>
+            <BotonTarea palabra="Veces" v-if="generalComp"/>
+            <p v-if="ocultosComp">
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea v-if="estadoMostar"/>
             <ComponetEmmanuel v-if="emmanuel" />
@@ -52,16 +54,152 @@ export default defineComponent({
 
   data() {
     return {
-      estadoMostar: true,
-      emmanuel: false,
-      general: false,
+      ocultosComp: false,
+      estadoMostrarComp: false,
+      generalComp: true,
+      grupoAzulComp: false,
+      jhonHenryComp: false,
+      juanComp: false,
+      sebastianComp: false,
+      dayhanaComp: false,
+      emmanuelComp: false,
+      andreaComp: false,
+      julianaComp: false,
+      eriscComp: false,
+      alexisComp: false,
+      footerComp: true,
     };
   },
   methods: {
-    emanuelBtn() {
-      this.estadoMostar = false;
-      this.emmanuel = true;
-      this.general = false;
+    emmanuelBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = true;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    grupoazul() {
+      this.generalComp = true;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = true;
+    },
+    jhonHenryBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = true;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    juanBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = true;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    sebastianBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = true;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    dayhanaBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = true;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    andreaBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = true;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    julianaBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = true;
+      this.eriscComp = false;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    eriscBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = true;
+      this.alexisComp = false;
+      this.footerComp = false;
+    },
+    alexisBtn() {
+      this.generalComp = false;
+      this.jhonHenryComp = false;
+      this.juanComp = false;
+      this.sebastianComp = false;
+      this.dayhanaComp = false;
+      this.emmanuelComp = false;
+      this.andreaComp = false;
+      this.julianaComp = false;
+      this.eriscComp = false;
+      this.alexisComp = true;
+      this.footerComp = false;
     },
   },
 });

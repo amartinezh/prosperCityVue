@@ -1,7 +1,8 @@
 <template>
-    <div class="azul">
+    <div>
+        <div class="azul">
         <aside class="aside">
-            <h1 class="titulo">HOLA SOMOS EL GRUPO AZUL</h1>
+            <h2 class="titulo">HOLA SOMOS EL GRUPO AZUL</h2>
             <br>
             <br>
             <h4 class="titulo">Los integrantes somos:</h4>
@@ -29,9 +30,11 @@
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea v-if="estadoMostar"/>
             <ComponetEmmanuel v-if="emmanuel" />
-             <sliderComponent v-if="general"/>
-             <comPalexis v-if="general"/>
+            <sliderComponent v-if="general"/>
+            <comPalexis v-if="general"/>
         </section>
+        </div>
+            <ComponentFooter />
     </div>
 </template>
 
@@ -42,6 +45,7 @@ import InputTarea from '@/components/InputTarea.vue';
 import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
 import sliderComponent from '@/components/sliderComponent.vue';
 import comPalexis from '@/components/comPalexis.vue';
+import ComponentFooter from '@/components/ComponentFooter.vue';
 
 export default defineComponent({
   components: {
@@ -50,6 +54,7 @@ export default defineComponent({
     ComponetEmmanuel,
     sliderComponent,
     comPalexis,
+    ComponentFooter,
   },
 
   data() {
@@ -241,7 +246,7 @@ ul li a:visited{
 li{
     Justify-content:center;
     border-radius: 9px;
-    padding: 5px;
+    padding: 4px;
     margin:3px;
 }
 
@@ -249,6 +254,8 @@ li{
     background-color: #93c7e5;
     padding: 10px;
     color: #f0f1ee;
+    width: 25vw;
+    height: 85vh;
 }
 .seccionCentral{
     background-color: #f0f1ee;
@@ -262,4 +269,5 @@ h1 {
     color: #4856fd;
     text-align: center;
 }
+
 </style>

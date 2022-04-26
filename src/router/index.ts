@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import TareaView from '../views/TareaView.vue';
+
 import DayanaView from '../views/DayanaView.vue';
 import EmanuelView from '../views/EmanuelView.vue';
+
+import GrupoRojoView from '../views/GrupoRojoView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,6 +24,7 @@ const routes: Array<RouteRecordRaw> = [
     component: TareaView,
   },
   {
+
     path: '/componentDayana',
     name: 'componentDayana',
     component: DayanaView,
@@ -29,6 +33,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/componentEmanuel',
     name: 'componentEmanuel',
     component: EmanuelView,
+  },
+  {
+    path: '/grupoRojo',
+    name: 'grupoRojo',
+    component: GrupoRojoView,
   },
 ];
 

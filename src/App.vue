@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">Inicio</router-link>
-    <router-link to="/about">Acerca de</router-link>
-    <router-link to="/tarea">Tarea Abril 1</router-link>
+    <router-link to="/">--Inicio--</router-link> |
+    <router-link to="/about">-- Acerca de ... --</router-link> |
+    <router-link to="/tarea">-- Tarea Abril 1 --</router-link> |
     <router-link to="/grupoRojo">Grupo Rojo</router-link>
     <router-link to="/Azul">Grupo Azul</router-link>
     <router-link to="/calculadora_prosper">Sumar</router-link>

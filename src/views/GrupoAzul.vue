@@ -30,8 +30,8 @@
             <InputTarea v-if="estadoMostar"/>
             <ComponetEmmanuel v-if="emmanuel"
             />
-             <sliderComponent v-if="general"/>
-             <comPalexis v-if="general"/>
+             <sliderComponent/>
+             <comPalexis/>
              <ComponentFooter />
         </section>
     </div>

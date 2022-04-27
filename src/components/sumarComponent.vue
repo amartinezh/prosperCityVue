@@ -1,7 +1,8 @@
 <template>
     <div id="container">
-      Este componente se llama sumarComponent
-        <showComponent msg="Este texto es enviado"></showComponent>
+      Este componente se llama sumarComponent (Componente hijo), mostrara la suma de los numeros
+      <br><h2> {{resultado}} </h2>
+      <showComponent msg="La suma"></showComponent>
     </div>
 </template>
 
@@ -13,7 +14,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'sumarComponent',
   props: {
-    msg: String,
+    resultado: Number,
   },
   components: {
     showComponent,

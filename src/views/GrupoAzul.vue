@@ -28,10 +28,9 @@
             <BotonTarea palabra="Veces" v-if="generalComp"/>
             <p v-if="ocultosComp">
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
-            <InputTarea v-if="estadoMostar"/>
-            <ComponetEmmanuel v-if="emmanuelBtn" />
-            <sliderComponent v-if="general"/>
-            <comPalexis v-if="general"/>
+            <InputTarea v-if="generalComp"/>
+            <ComponetEmmanuel v-if="emmanuelComp" />
+            <comPalexis v-if="generalComp"/>
         </section>
         </div>
             <ComponentFooter />
@@ -255,7 +254,7 @@ li{
     padding: 10px;
     color: #f0f1ee;
     width: 25vw;
-    height: 85vh;
+    height: 85%;
 }
 .seccionCentral{
     background-color: #f0f1ee;

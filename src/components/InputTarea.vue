@@ -5,6 +5,7 @@
     <input  class="nombre"
       type="text"
       v-on:input="saludar2"
+      v-model="saludar3"
       placeholder="Digite su nombre"
     >
     </label><button class="send" @click.prevent="saludar">Enviar</button>
@@ -22,6 +23,7 @@ export default defineComponent({
       saluda1: 'Aqui aparecerá tu nombre',
       saluda: '',
       hola: '',
+      saludar3: '',
     };
   },
   methods: {
@@ -32,6 +34,7 @@ export default defineComponent({
       if (this.saluda !== '') {
         this.saluda1 = this.saluda;
         this.hola = 'Hola';
+        this.saludar3 = '';
       } else {
         this.saluda1 = 'No has escrito nada aún';
       }

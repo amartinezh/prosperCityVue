@@ -31,6 +31,7 @@
             <InputTarea v-if="generalComp"/>
             <ComponetEmmanuel v-if="emmanuelComp" />
             <comPalexis v-if="generalComp"/>
+            <ComponentDayhana v-if="dayhanaComp"/>
         </section>
         </div>
             <ComponentFooter />
@@ -45,6 +46,7 @@ import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
 import sliderComponent from '@/components/sliderComponent.vue';
 import comPalexis from '@/components/comPalexis.vue';
 import ComponentFooter from '@/components/ComponentFooter.vue';
+import ComponentDayhana from '@/components/ComponentDayhana.vue';
 
 export default defineComponent({
   components: {
@@ -54,6 +56,7 @@ export default defineComponent({
     sliderComponent,
     comPalexis,
     ComponentFooter,
+    ComponentDayhana,
   },
 
   data() {
@@ -236,8 +239,6 @@ li:hover{
     border-radius: 9px;
     padding: 5px;
     margin:3px;
-    -moz-border-radius: 70%;
-    -webkit-border-radius: 700%;
 }
 ul li a:visited{
     color: #2f404f;

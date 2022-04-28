@@ -2,7 +2,9 @@
 <div class="add-link">
   <div class="link">
   </div>
-  <h2>Links</h2>
+  <div class="gancho">
+    <h2>Links</h2>
+  </div>
   <button>New link</button>
   <div class="contenedor">
     <p>Guardar y salir</p>
@@ -37,6 +39,13 @@ button{
   margin:40px 10px;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
+}
+.gancho{
+  position: inline;
+}
+img{
+  width:10px;
+  height:10px;
 }
 .subirImg{
   width: 178px;

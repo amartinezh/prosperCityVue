@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ titulo_tarea }}</h1>
+    <h1>{{ msg }}</h1>
     <h2>
       En ésta página encontrarás las indicaciones del taller práctico por
     </h2>
@@ -24,7 +24,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'TareaComponent',
   props: {
-    Msg: String,
+    msg: String,
     titulo_tarea: String,
   },
 });

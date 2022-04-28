@@ -3,11 +3,11 @@
   <div class="link">
   </div>
   <div class="gancho">
-    <h2>Links</h2>
+    <h2> <img src="../assets/icons8-add-link-24.png" alt="">Links</h2>
   </div>
-  <button>New link</button>
+  <button> + New link</button>
   <div class="contenedor">
-    <p>Guardar y salir</p>
+    <p>Guardar y salir X</p>
     <p> {{ nombreTitulo }}</p>
     <input v-model="nombreTitulo" placeholder="Titulo" />
     <p> {{ direccionUrl }}</p>
@@ -30,9 +30,8 @@ button{
   height: 56px;
   color: white;
   display:flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding-left: 18px;
   font: arial;
   font-size:16px;
   border-radius: 10px;
@@ -41,12 +40,15 @@ button{
   border: none;
 }
 .gancho{
-  position: inline;
+  display: flex;
+  flex:row;
 }
 img{
-  width:10px;
-  height:10px;
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
 }
+
 .subirImg{
   width: 178px;
   height: 40px;

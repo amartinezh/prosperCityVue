@@ -4,12 +4,12 @@
     <main class="main">
       <div class="main-container">
         <div class="profile-container">
+          <profile-component :name="profile.name" :description="
+          profile.description" :photo="profile.photo" @getData="getData"/>
           <div class="profile">Ver perfil</div>
           <div class="edit-profile">Editar perfil</div>
         </div>
         <previewComponent v-bind:profile="profile" v-bind:links="links"/>
-        <div class="add-link">Add Link <anaLink/></div>
-        <div class="link-list">Link List</div>
         <previewComponent/>
         <div class="add-link">
           <anaLink/>
@@ -26,6 +26,7 @@ import previewComponent from '@/components/previewComponent.vue';
 import anaLink from '@/components/anaLink.vue';
 import DianaSidebar from '@/components/DianaSidebar.vue';
 import LinkList from '@/components/MikeLinkList.vue';
+import ProfileComponent from '@/components/ProfileComponent.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -35,6 +36,7 @@ export default defineComponent({
     anaLink,
     DianaSidebar,
     LinkList,
+    ProfileComponent,
   },
   data() {
     return {
@@ -58,6 +60,13 @@ export default defineComponent({
         },
       ],
     };
+  },
+  methods: {
+    getData(info) {
+      this.profile.name = info.name;
+      this.profile.description = info.description;
+      this.profile.photo = info.photo;
+    },
   },
 });
 </script>

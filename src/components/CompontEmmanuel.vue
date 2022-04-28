@@ -1,7 +1,7 @@
 <template>
 <div>
  <h1 class="prueba">Emmanuel Renteria Mena</h1>
- <InputTarea v-on:input="methBuscar" :place-holder="BuscarPer"/>
+ <InputTarea v-on:input="methBuscar" :place-holder="placeBuscarPer"/>
  <br/>
   <InputTarea @change="nombre" :place-holder="nombrePro"/>
   <InputTarea v-on:change="aprellido" :place-holder="apellidoPro"/>
@@ -36,6 +36,7 @@ export default defineComponent({
   },
   data() {
     return {
+      mayus: '',
       mostarPersona: true,
       mostarBusqueda: false,
       buscar: [],
@@ -44,7 +45,8 @@ export default defineComponent({
       resultado: '',
       nombrePro: 'digite su nombre',
       apellidoPro: 'digite su apellido',
-      BuscarPer: 'Buscar persona',
+      placeBuscarPer: 'Buscar persona',
+      BuscarPer: '',
       apodo: '',
       persona: [
         {
@@ -56,8 +58,10 @@ export default defineComponent({
   },
   methods: {
     filtarPersonas(persona) {
-      this.buscar = this.persona.filter((elem) => elem.nombre === persona);
-      console.log(this.buscar);
+      this.mayus = persona;
+      this.mayus.toUpperCase(persona);
+      this.buscar = this.persona.filter((elem) => elem.nombre.includes(persona));
+      console.log(this.mayus);
     },
     methBuscar(e) {
       this.BuscarPer = e.target.value;
@@ -65,6 +69,8 @@ export default defineComponent({
         this.mostarPersona = false;
         this.mostarBusqueda = true;
         this.filtarPersonas(this.BuscarPer);
+      } else if (this.buscar === '') {
+        console.log('no se ha encontrado ...');
       } else {
         this.mostarPersona = true;
         this.mostarBusqueda = false;

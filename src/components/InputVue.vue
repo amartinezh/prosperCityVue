@@ -4,7 +4,6 @@
     <input  class="nombre"
       type="text"
       :placeholder="placeHolder"
-      :v-model="borrar"
     >
     </label>
   </div>
@@ -16,7 +15,6 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   props: {
     placeHolder: String,
-    borrar: String,
   },
   data() {
     return {

@@ -1,7 +1,7 @@
 <template>
     <div id="container">
       Este componente se llama sumarComponent (Componente hijo), mostrara la suma de los numeros
-      <br><h2> {{resultado}} </h2>
+      <br><h2> el resultado es {{resultado}} </h2>
       <showComponent msg="La suma"></showComponent>
     </div>
 </template>

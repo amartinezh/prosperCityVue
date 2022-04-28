@@ -1,7 +1,5 @@
 <template>
-<div class="input">
-    <button class="boton">enviar</button>
-  </div>
+    <button class="boton">Registrar</button>
 </template>
 
 <script>
@@ -30,7 +28,7 @@ export default defineComponent({
 .boton {
     height: 50px;
     border:none;
-    background-color: rgb(252, 217, 22);
+    background-color: rgb(70, 103, 146);
     width: 120px;
     font-size: 1.1rem;
     border-radius: 25px;

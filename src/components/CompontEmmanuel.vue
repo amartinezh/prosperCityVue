@@ -2,7 +2,7 @@
 <div>
  <h1 class="prueba">Emmanuel Renteria Mena</h1>
  <br/>
-  <InputTarea @change="nombre" :place-holder="nombrePro" :v-model="borrar"/>
+  <InputTarea @change="nombre" :place-holder="nombrePro" v-model="borrar"/>
   <InputTarea v-on:change="aprellido" :place-holder="apellidoPro"/>
   <ComponetBoton @click="registro"/>
   <br>
@@ -31,6 +31,7 @@ export default defineComponent({
   },
   data() {
     return {
+      buscar: [],
       resultado1: '',
       resultado: '',
       nombrePro: 'digite su nombre',
@@ -45,6 +46,11 @@ export default defineComponent({
     };
   },
   methods: {
+    filtarPersonas() {
+      this.buscar = this.persona.filter((elem) => elem.nombre === 'reyk');
+      this.filter = this.buscar;
+      console.log(this.buscar);
+    },
     nombre(g) {
       this.resultado1 = g.target.value;
     },

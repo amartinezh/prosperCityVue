@@ -4,7 +4,7 @@
     <label for="text">
     <input  class="nombre"
       type="text"
-      v-on:input="saludar2"
+      vinput-on:="saludar2"
       v-model="saludar3"
       placeholder="Digite su nombre"
     >

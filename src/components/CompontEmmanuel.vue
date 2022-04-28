@@ -1,15 +1,20 @@
 <template>
 <div>
  <h1 class="prueba">Emmanuel Renteria Mena</h1>
+ <InputTarea v-on:input="methBuscar" :place-holder="BuscarPer"/>
  <br/>
-  <InputTarea @change="nombre" :place-holder="nombrePro" v-model="borrar"/>
+  <InputTarea @change="nombre" :place-holder="nombrePro"/>
   <InputTarea v-on:change="aprellido" :place-holder="apellidoPro"/>
   <ComponetBoton @click="registro"/>
   <br>
   <br>
 <ul>
-  <h1 v-for="(persona) in persona" :key="persona.id">Hola {{ persona.nombre }}
-  {{ persona.apellido }}</h1>
+  <h5 v-if="mostarPersona">
+  <h1 v-for="(persona) in persona" :key="persona.id">{{ persona.nombre }}
+  {{ persona.apellido }}</h1> </h5>
+  <h5 v-if="mostarBusqueda">
+  <h1 v-for="(buscar) in buscar" :key="buscar.id">{{ buscar.nombre }}
+  {{ buscar.apellido }}</h1> </h5>
 </ul>
 
 </div>
@@ -31,11 +36,15 @@ export default defineComponent({
   },
   data() {
     return {
+      mostarPersona: true,
+      mostarBusqueda: false,
       buscar: [],
+      inpBuscar: '',
       resultado1: '',
       resultado: '',
       nombrePro: 'digite su nombre',
       apellidoPro: 'digite su apellido',
+      BuscarPer: 'Buscar persona',
       apodo: '',
       persona: [
         {
@@ -46,10 +55,20 @@ export default defineComponent({
     };
   },
   methods: {
-    filtarPersonas() {
-      this.buscar = this.persona.filter((elem) => elem.nombre === 'reyk');
-      this.filter = this.buscar;
+    filtarPersonas(persona) {
+      this.buscar = this.persona.filter((elem) => elem.nombre === persona);
       console.log(this.buscar);
+    },
+    methBuscar(e) {
+      this.BuscarPer = e.target.value;
+      if (this.BuscarPer !== '') {
+        this.mostarPersona = false;
+        this.mostarBusqueda = true;
+        this.filtarPersonas(this.BuscarPer);
+      } else {
+        this.mostarPersona = true;
+        this.mostarBusqueda = false;
+      }
     },
     nombre(g) {
       this.resultado1 = g.target.value;
@@ -58,6 +77,9 @@ export default defineComponent({
       this.resultado = g.target.value;
     },
     registro(e) {
+      this.mostarPersona = true;
+      this.mostarBusqueda = false;
+      this.filtarPersonas(this.BuscarPer);
       if (this.resultado !== '' && this.resultado1 !== '') {
         this.persona.push({
           nombre: this.resultado1,

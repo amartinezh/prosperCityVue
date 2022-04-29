@@ -2,23 +2,20 @@
     <div>
         <div class="azul">
         <aside class="aside">
-            <h2 class="titulo">HOLA SOMOS EL GRUPO AZUL</h2>
-            <br>
-            <br>
-            <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
-                <h3>
-                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
-                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
-                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
-                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
-                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
-                <li> <a href="#" @click="emmanuelBtn"> Emmanuel </a> </li>
-                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
-                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
-                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
-                <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
-                </h3>
+                <h5>
+                  <h4 class="titulo">Los integrantes somos:</h4>
+                  <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
+                  <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                  <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
+                  <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
+                  <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
+                  <li> <a href="#" @click="emmanuelBtn"> Emmanuel </a> </li>
+                  <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
+                  <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
+                  <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
+                  <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
+                </h5>
             </ul>
         </aside>
         <section class="seccionCentral">
@@ -225,13 +222,12 @@ export default defineComponent({
 }
 .azul{
     margin: 0px 0;
-    display: flex;
+    /* display: flex; */
 }
 ul{
     list-style: none;
     margin: 15px 0;
     color: #2f404f;
-    align-items: center;
     display: flex;
     Justify-content:center;
 }
@@ -244,28 +240,28 @@ li:hover{
     background-color: rgb(121, 97, 219);
     border-radius: 9px;
     padding: 5px;
-    margin:3px;
+    margin:5px;
 }
 ul li a:visited{
     color: #2f404f;
 }
 li{
+    display: flex;
     Justify-content:center;
     border-radius: 9px;
-    padding: 4px;
-    margin:3px;
+    padding: 5px;
+    margin:5px;
 }
 
 .aside{
     background-color: #93c7e5;
     padding: 10px;
     color: #f0f1ee;
-    width: 25vw;
     height: 85%;
+    display: flex;
 }
 .seccionCentral{
     background-color: #f0f1ee;
-    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -33,6 +33,7 @@
             <EriscComp v-if="eriscComp" />
             <comPalexis v-if="generalComp"/>
             <ComponentDayhana v-if="dayhanaComp"/>
+            <AndreComp v-if="andreaComp"/>
         </section>
         </div>
             <ComponentFooter />
@@ -49,6 +50,7 @@ import comPalexis from '@/components/GrupoAzulComps/comPalexis.vue';
 import ComponentFooter from '@/components/GrupoAzulComps/ComponentFooter.vue';
 import ComponentDayhana from '@/components/GrupoAzulComps/ComponentDayhana.vue';
 import EriscComp from '@/components/GrupoAzulComps/EriscComponente.vue';
+import AndreComp from '@/components/GrupoAzulComps/AndreaComponente.vue';
 
 export default defineComponent({
   components: {
@@ -60,6 +62,7 @@ export default defineComponent({
     ComponentFooter,
     ComponentDayhana,
     EriscComp,
+    AndreComp,
   },
 
   data() {

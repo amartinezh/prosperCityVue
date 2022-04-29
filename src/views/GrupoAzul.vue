@@ -236,8 +236,8 @@ ul li a{
 li:hover{
     background-color: rgb(121, 97, 219);
     border-radius: 9px;
-    padding: 5px;
-    margin:5px;
+    padding: 9px;
+    margin:5px 30px;
 }
 ul li a:visited{
     color: #2f404f;
@@ -246,7 +246,7 @@ li{
     display: flex;
     Justify-content:center;
     border-radius: 9px;
-    padding: 5px;
+    padding: 9px;
     margin:5px 30px;
     font-size: 1.5rem;
 }

@@ -4,13 +4,13 @@
       <div class="redes">
         <ul>
           <li><h5>Síguenos en</h5></li>
-          <li><a href="https://www.facebook.com/Prospercity-109390181569422/about/?ref=page_internal" target="_blank"><img class="face" src="../assets/facebook.png" alt="facebook"></a><a href="https://instagram.com/prospercity.co?igshid=YmMyMTA2M2Y=" target="_blank"><img class="insta" src="../assets/instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/Prospercity-109390181569422/about/?ref=page_internal" target="_blank"><img class="face" src="../../assets/facebook.png" alt="facebook"></a><a href="https://instagram.com/prospercity.co?igshid=YmMyMTA2M2Y=" target="_blank"><img class="insta" src="../../assets/instagram.png" alt="Instagram"></a></li>
         </ul>
       </div>
       <div>
           <ul>
             <li><b><h5>Página oficial</h5></b></li>
-            <li><a href="https://www.prospercity.co/" target="_blank"><img class="prosper" src="../assets/logo_p.jpg" alt="ProsperCity"></a></li>
+            <li><a href="https://www.prospercity.co/" target="_blank"><img class="prosper" src="../../assets/logo_p.jpg" alt="ProsperCity"></a></li>
           </ul>
       </div>
       <div class="nosotros">

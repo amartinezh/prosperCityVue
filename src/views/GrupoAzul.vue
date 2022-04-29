@@ -2,23 +2,17 @@
     <div>
         <div class="azul">
         <aside class="aside">
-            <h2 class="titulo">HOLA SOMOS EL GRUPO AZUL</h2>
-            <br>
-            <br>
-            <h4 class="titulo">Los integrantes somos:</h4>
             <ul>
-                <h3>
-                <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
-                <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
-                <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
-                <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
-                <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
-                <li> <a href="#" @click="emmanuelBtn"> Emmanuel </a> </li>
-                <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
-                <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
-                <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
-                <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
-                </h3>
+                  <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
+                  <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
+                  <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
+                  <li> <a href="#" @click="sebastianBtn"> Sebastian </a> </li>
+                  <li> <a href="#" @click="dayhanaBtn"> Dayhana </a> </li>
+                  <li> <a href="#" @click="emmanuelBtn"> Emmanuel </a> </li>
+                  <li> <a href="#" @click="andreaBtn"> Andrea </a> </li>
+                  <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
+                  <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
+                  <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
             </ul>
         </aside>
         <section class="seccionCentral">
@@ -39,12 +33,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import BotonTarea from '@/components/BotonTarea.vue';
-import InputTarea from '@/components/InputTarea.vue';
-import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
-import sliderComponent from '@/components/sliderComponent.vue';
-import comPalexis from '@/components/comPalexis.vue';
-import ComponentFooter from '@/components/ComponentFooter.vue';
+import BotonTarea from '@/components/GrupoAzulComps/BotonTarea.vue';
+import InputTarea from '@/components/GrupoAzulComps/InputTarea.vue';
+import ComponetEmmanuel from '@/components/GrupoAzulComps/CompontEmmanuel.vue';
+import sliderComponent from '@/components/GrupoAzulComps/sliderComponent.vue';
+import comPalexis from '@/components/GrupoAzulComps/comPalexis.vue';
+import ComponentFooter from '@/components/GrupoAzulComps/ComponentFooter.vue';
+import ComponentDayhana from '@/components/GrupoAzulComps/ComponentDayhana.vue';
+import EriscComp from '@/components/GrupoAzulComps/EriscComponente.vue';
+import AndreComp from '@/components/GrupoAzulComps/AndreaComponente.vue';
 
 export default defineComponent({
   components: {
@@ -54,6 +51,9 @@ export default defineComponent({
     sliderComponent,
     comPalexis,
     ComponentFooter,
+    ComponentDayhana,
+    EriscComp,
+    AndreComp,
   },
 
   data() {
@@ -216,15 +216,14 @@ export default defineComponent({
 }
 .azul{
     margin: 0px 0;
-    display: flex;
+    /* display: flex; */
 }
 ul{
     list-style: none;
-    margin: 15px 0;
+    margin: 15px auto;
     color: #2f404f;
-    align-items: center;
     display: flex;
-    Justify-content:center;
+    justify-content: center;
 }
 
 ul li a{
@@ -234,31 +233,30 @@ ul li a{
 li:hover{
     background-color: rgb(121, 97, 219);
     border-radius: 9px;
-    padding: 5px;
-    margin:3px;
-    -moz-border-radius: 70%;
-    -webkit-border-radius: 700%;
+    padding: 9px;
+    margin:5px 30px;
 }
 ul li a:visited{
     color: #2f404f;
 }
 li{
+    display: flex;
     Justify-content:center;
     border-radius: 9px;
-    padding: 4px;
-    margin:3px;
+    padding: 9px;
+    margin:5px 30px;
+    font-size: 1.5rem;
 }
 
 .aside{
     background-color: #93c7e5;
     padding: 10px;
     color: #f0f1ee;
-    width: 25vw;
-    height: 85vh;
+    height: 85%;
+    display: flex;
 }
 .seccionCentral{
     background-color: #f0f1ee;
-    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

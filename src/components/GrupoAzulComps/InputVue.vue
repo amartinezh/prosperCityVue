@@ -3,9 +3,7 @@
     <label for="text">
     <input  class="nombre"
       type="text"
-      v-on:model="peronsaInp"
-      v-on:change="registro"
-      placeholder="Digite su nombre"
+      :placeholder="placeHolder"
     >
     </label>
   </div>
@@ -15,9 +13,11 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+  props: {
+    placeHolder: String,
+  },
   data() {
     return {
-      placeHolder: 'Digite su nombre',
     };
   },
 });

@@ -30,6 +30,7 @@
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
             <InputTarea v-if="generalComp"/>
             <ComponetEmmanuel v-if="emmanuelComp" />
+            <EriscComp v-if="eriscComp" />
             <comPalexis v-if="generalComp"/>
             <ComponentDayhana v-if="dayhanaComp"/>
         </section>
@@ -40,13 +41,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import BotonTarea from '@/components/BotonTarea.vue';
-import InputTarea from '@/components/InputTarea.vue';
-import ComponetEmmanuel from '@/components/CompontEmmanuel.vue';
-import sliderComponent from '@/components/sliderComponent.vue';
-import comPalexis from '@/components/comPalexis.vue';
-import ComponentFooter from '@/components/ComponentFooter.vue';
-import ComponentDayhana from '@/components/ComponentDayhana.vue';
+import BotonTarea from '@/components/GrupoAzulComps/BotonTarea.vue';
+import InputTarea from '@/components/GrupoAzulComps/InputTarea.vue';
+import ComponetEmmanuel from '@/components/GrupoAzulComps/CompontEmmanuel.vue';
+import sliderComponent from '@/components/GrupoAzulComps/sliderComponent.vue';
+import comPalexis from '@/components/GrupoAzulComps/comPalexis.vue';
+import ComponentFooter from '@/components/GrupoAzulComps/ComponentFooter.vue';
+import ComponentDayhana from '@/components/GrupoAzulComps/ComponentDayhana.vue';
+import EriscComp from '@/components/GrupoAzulComps/EriscComponente.vue';
 
 export default defineComponent({
   components: {
@@ -57,6 +59,7 @@ export default defineComponent({
     comPalexis,
     ComponentFooter,
     ComponentDayhana,
+    EriscComp,
   },
 
   data() {

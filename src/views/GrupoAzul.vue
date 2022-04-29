@@ -25,6 +25,10 @@
             <InputTarea v-if="generalComp"/>
             <ComponetEmmanuel v-if="emmanuelComp" />
             <comPalexis v-if="alexisComp"/>
+            <ComponentDayhana v-if="dayhanaComp"/>
+            <EriscComp v-if="eriscComp"/>
+             <AndreComp v-if="andreaComp"/>
+
         </section>
         </div>
             <ComponentFooter />

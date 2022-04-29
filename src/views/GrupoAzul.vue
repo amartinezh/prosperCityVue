@@ -3,8 +3,6 @@
         <div class="azul">
         <aside class="aside">
             <ul>
-                <h5>
-                  <h4 class="titulo">Los integrantes somos:</h4>
                   <li> <a href="#" @click="grupoazul"> Grupo Azul </a> </li>
                   <li> <a href="#" @click="jhonHenryBtn"> Jhon Henry </a> </li>
                   <li> <a href="#" @click="juanBtn"> Juan Felipe </a> </li>
@@ -15,7 +13,6 @@
                   <li> <a href="#" @click="julianaBtn"> Juliana </a> </li>
                   <li> <a href="#" @click="eriscBtn"> Erisc </a> </li>
                   <li> <a href="#" @click="alexisBtn"> Alexis </a></li>
-                </h5>
             </ul>
         </aside>
         <section class="seccionCentral">
@@ -226,10 +223,10 @@ export default defineComponent({
 }
 ul{
     list-style: none;
-    margin: 15px 0;
+    margin: 15px auto;
     color: #2f404f;
     display: flex;
-    Justify-content:center;
+    justify-content: center;
 }
 
 ul li a{
@@ -250,7 +247,8 @@ li{
     Justify-content:center;
     border-radius: 9px;
     padding: 5px;
-    margin:5px;
+    margin:5px 30px;
+    font-size: 1.5rem;
 }
 
 .aside{

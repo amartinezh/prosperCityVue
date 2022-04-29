@@ -22,16 +22,15 @@
             </ul>
         </aside>
         <section class="seccionCentral">
-            <sliderComponent v-if="generalComp"/>
+            <sliderComponent v-if="sebastianComp"/>
             <p v-if="estadoMostarComp">lo siento a un trabajo en mi componente</p>
             <p v-if="ocultosComp"><i>Aqui abajo pondremos el componente:</i></p>
             <BotonTarea palabra="Veces" v-if="generalComp"/>
             <p v-if="ocultosComp">
             <i>Aqui Creamos un componente Para que el interactue el usuario</i></p>
-            <InputTarea v-if="estadoMostar"/>
-            <ComponetEmmanuel v-if="emmanuelBtn" />
-            <sliderComponent v-if="general"/>
-            <comPalexis v-if="general"/>
+            <InputTarea v-if="generalComp"/>
+            <ComponetEmmanuel v-if="emmanuelComp" />
+            <comPalexis v-if="alexisComp"/>
         </section>
         </div>
             <ComponentFooter />
@@ -93,13 +92,13 @@ export default defineComponent({
       this.generalComp = true;
       this.jhonHenryComp = false;
       this.juanComp = false;
-      this.sebastianComp = false;
+      this.sebastianComp = true;
       this.dayhanaComp = false;
-      this.emmanuelComp = false;
+      this.emmanuelComp = true;
       this.andreaComp = false;
       this.julianaComp = false;
       this.eriscComp = false;
-      this.alexisComp = false;
+      this.alexisComp = true;
       this.footerComp = true;
     },
     jhonHenryBtn() {

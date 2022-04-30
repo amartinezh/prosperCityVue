@@ -6,7 +6,7 @@
       />
       <div class="content">
         <p class="name">{{ name }}</p>
-        <p class="description">{{ description }}</p>
+        <p class="description mt-1">{{ description }}</p>
       </div>
       <i
         class="bi bi-pencil"

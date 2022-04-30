@@ -6,8 +6,6 @@
         <div class="profile-container">
           <profile-component :name="profile.name" :description="
           profile.description" :photo="profile.photo" @getData="getData"/>
-          <div class="profile">Ver perfil</div>
-          <div class="edit-profile">Editar perfil</div>
         </div>
         <previewComponent v-bind:profile="profile" v-bind:links="links"/>
         <previewComponent/>

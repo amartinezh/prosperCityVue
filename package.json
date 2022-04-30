@@ -14,10 +14,12 @@
     "gitart-scroll-carousel": "^0.0.3",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "tailwindcss": "^1.1.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
+    "@ianaya89/vue-cli-plugin-tailwind": "~1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",

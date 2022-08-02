@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <p>
       ¿Quieres recibir una beca y convertirte en Programador en 6 meses?
-      <a href="https://www.prospercity.co/" target="_blank" rel="noopener">Prospercity</a>.
+      <a href="https://www.prospercity.co/" target="_blank" rel="noopener">Prospercity</a> es tu respuesta.
     </p>
     <h3>¿Cuánto dura el programa?</h3>
     <ul>

@@ -3,6 +3,8 @@
     <router-link to="/">-[Inicio]-</router-link> |
     <router-link to="/about">-- [Acerca de ...] --</router-link> |
     <router-link to="/tarea">-- [Tarea para grupos] --</router-link> |
+    <router-link to="/friends">Friends Pages</router-link> |
+
   </nav>
   <router-view />
 </template>

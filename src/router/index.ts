@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import TareaView from '../views/TareaView.vue';
+import MultimediaView from '../views/MultimediaView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,6 +19,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'tarea',
     component: TareaView,
   },
+  {
+    path: '/multimedia',
+    name: 'multimedia',
+    component: MultimediaView,
+  },
+
 ];
 
 const router = createRouter({

@@ -6,22 +6,25 @@
      <li>
      <h2><img src="../assets/paisaje.jpeg" width="500" height="50" alt="Imagen de paisaje">
      <figcaption>El medio ambiente es nuestra responsabilidad</figcaption></h2>
-     <h3>¿Que es el medio ambiente?</h3>
+     <h3>¿Qué es el medio ambiente?</h3>
       <p>El medio ambiente es un sistema formado por elementos naturales y artificiales que
       están interrelacionados y que son modificados por la acción humana.
       El medio ambiente es el espacio en el que se desarrolla la vida de
       los distintos organismos favoreciendo su interacción. En él se encuentran
-      tanto seres vivos como elementos sin vida y otros creados por la mano del hombre.
+      tanto seres vivos como elementos sin vida y otros creados por la mano del hombre.<br><br><br>
+
       Todos los organismos obtienen del medio ambiente todos los elementos que necesitan
       para vivir: desde el aire y el agua, hasta el refugio y el alimento que les permite
       crecer, desarrollarse y obtener energía. Mantener el equilibrio del medio ambiente es
-      fundamental para mantener la vida en la tierra tal como la conocemos.
+      fundamental para mantener la vida en la tierra tal como la conocemos.<br><br>
 
       Además, los seres humanos utilizan una gran cantidad de recursos naturales del medio
       para cubrir sus necesidades como vestimenta, alimento y objetos de uso cotidiano entre
       otros ejemplos. Por eso el ser humano debe conocer y cuidar sus interacciones con el
       medio ambiente para gestionar de manera sostenible los recursos naturales que permiten
-      su crecimiento económico y su desarrollo.
+      su crecimiento económico y su desarrollo.<br><br>
+
+      <a href="https://concepto.de/medio-ambiente/" target="_blank" rel="noopener">Fuente: Medio ambiente</a>
 
       </p>
      </li>
@@ -43,6 +46,9 @@ export default defineComponent({
 
 <style scoped>
 
+a {
+  color: blueviolet;
+}
 figcaption {
   font-size: 15px;
   text-align: left;
@@ -52,11 +58,10 @@ hr {
   background-color: gray;
 }
 h1 {
-    font-size: 23px;
+    font-size: 38px;
     font-weight: bold;
     text-shadow: 7px 4px 5px rgb(209, 208, 208);
     margin: 40px;
-    font-size-adjust: calc(0.9);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 

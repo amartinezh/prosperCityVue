@@ -1,6 +1,6 @@
 <template>
  <div class="new-component">
-    <Friends msg= "Una ventana a la naturaleza y el medio ambiente"/>
+    <Friends msg= "Una Ventana a la Naturaleza y el Medio Ambiente"/>
  </div>
 </template>
 

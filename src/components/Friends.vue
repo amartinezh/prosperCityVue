@@ -54,7 +54,7 @@
       entender que lo que hagamos o dejemos de hacer al medio ambiente, influye
       sobre nuestras vidas y nuestro futuro. <br><br>
       <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/que-es-la-contaminacion-ambiental"
-      target="_blank" rel="noopener">Fuente: contaminación ambiental</a></P>
+      target="_blank" rel="noopener">Fuente: Contaminación ambiental</a></P>
 </div>
 </template>
 

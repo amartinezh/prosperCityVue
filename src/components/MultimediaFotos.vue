@@ -1,71 +1,58 @@
 <template>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="video-container">
-        <div class="video-item video-1">
-            <h3 class="subtitle">¿Tiene la inteligencia Artificial conciencia?</h3>
-            <hr>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VsduvmlZZuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <button class="like" @click="increment1">
-                <span class="material-symbols-outlined">favorite</span>
-            </button> <span>{{like1}}</span>
+    <div class="imagen-container">
+        <div class="imagen-item imagen-1">
+            <h3 class="subtitle">ia vs human</h3>
+            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="mente humana vs mente de maquina" title="mente humana vs mente de maquina">
         </div>
-        <div class="video-item video-2">
-            <h3 class="subtitle">Aprende a desarrollar una App de Inteligencia Artificial</h3>
+        <div class="imagen-item imagen-2">
+            <h3 class="subtitle">mentes inteligentes</h3>
             <hr>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UsG52AywMLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <button class="like" @click="increment2">
-                <span class="material-symbols-outlined">favorite</span>
-            </button> <span>{{like2}}</span>
+            <img src="https://i.postimg.cc/hGKk3m1Y/AI-3.jpg" alt="mentes inteligentes" title="mentes inteligentes">
         </div>
-        <div class="video-item video-3">
-            <h3 class="subtitle">Esta inteligencia dibuja por ti </h3>
+        <div class="imagen-item imagen-3">
+            <h3 class="subtitle">autoconciencia</h3>
             <hr>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vCOy-US2NkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <button class="like" @click="increment3">
-                <span class="material-symbols-outlined">favorite</span>
-            </button> <span>{{like3}}</span>
+            <img src="https://i.postimg.cc/Dz59VzCw/AI-4.jpg " alt="autoconciencia" title="autoconciencia">
+        </div>
+        <div class="imagen-item imagen-4">
+            <h3 class="subtitle">trabajo inteligente</h3>
+            <hr>
+            <img src="https://i.postimg.cc/bJJKqjMH/AI-5.jpg" alt="trabajo inteligente" title="trabajo inteligente">
+        </div>
+        <div class="imagen-item imagen-5">
+            <h3 class="subtitle">agentes inteligentes</h3>
+            <hr>
+            <img src="https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg" alt="agentes inteligentes" title="agentes inteligentes">
+        </div>
+        <div class="imagen-item imagen-6">
+            <h3 class="subtitle">globalizacion inteligente</h3>
+            <hr>
+            <img src="https://i.postimg.cc/MHk25FP7/AI-7.jpg" alt="globalizacion inteligente" title="globalizacion inteligente">
+        </div>
+        <div class="imagen-item imagen-7">
+            <h3 class="subtitle">intelecto artificial</h3>
+            <hr>
+            <img src="https://i.postimg.cc/Jz7wpJq2/AI-8.jpg" alt="intelecto artificial" title="intelecto artificial">
+        </div>
+        <div class="imagen-item imagen-8">
+            <h3 class="subtitle">metaverso</h3>
+            <hr>
+            <img src="https://i.postimg.cc/J0CvZB0K/AI-9.jpg" alt="metaverso" title="metaverso">
         </div>
     </div>
 </template>
 
-<script>
-export default {
-  name: 'App',
-  data() {
-    return {
-      like1: 5,
-      like2: 0,
-      like3: 4,
-    };
-  },
-  methods: {
-    increment1() {
-      this.like1 += 1;
-    },
-    increment2() {
-      this.like2 += 1;
-    },
-    increment3() {
-      this.like3 += 1;
-    },
-  },
-};
-
-</script>
 <style>
 
-    .video-container{
-        /* display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-auto-rows: 1fr; */
-        margin: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 5px;
+    .imagen-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 2fr;
     }
-    .video-item iframe{
-        width: 400px;
+    .imagen-item img{
+        width: 300px;
+        height: 300px;
     }
 
     .subtitle{
@@ -78,7 +65,7 @@ export default {
         text-align: left;
         margin-left: 12px;
     }
-    .video-item hr{
+    .imagen-item hr{
         margin:10px;
         margin-top: 4px;
         color: #42b983;
@@ -92,7 +79,7 @@ export default {
     }
 
     @media (max-width: 700px){
-        .video-container{
+        .imagen-container{
         /* display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-auto-rows: 1fr; */

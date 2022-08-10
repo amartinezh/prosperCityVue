@@ -6,6 +6,8 @@
     <h2>
       Componente básico para el taller en clase
     </h2>
+    <p>Practicaremos un poco respecto a la creación de componentes <br />
+     durante la segunda hora de clase</p>
   </div>
 </template>
 

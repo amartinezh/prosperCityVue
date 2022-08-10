@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Aqui encontrarás la lista de todos los integrantes de los equipos</h1>
     <ComponenteEjemploComponent titulo="Titulo del componente" msg="Bienvenido"/>
   </div>
 </template>

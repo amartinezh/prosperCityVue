@@ -29,7 +29,52 @@
       </p>
      </li>
     </ul>
- </div>
+     <h3>¿Qué es la contaminación ambiental?</h3>
+     <p>La contaminación ambiental es la presencia de sustancias o elementos dañinos
+      para los seres humanos y los ecosistemas (seres vivos).Existen diferentes tipos
+      de contaminación, pero básicamente se pueden dividir en:
+      contaminación del aire, contaminación de suelos (tierra) y contaminación del
+      agua.</p>
+      <p>Todos los seres vivos necesitamos de esta fuente de oxígeno para existir,
+      sin embargo, hay muchos elementos que pueden llenarlo de impurezas que
+      pueden provocar malestar en las personas, en las plantas y en los animales.
+      Los principales contaminantes son todos los automóviles en la ciudad,
+      especialmente los camiones y buses, también las basuras que desecha el hombre,
+      sustancias químicas de fábricas , entre otros.</p>
+
+      <h4><img src="../assets/contaminación.jpg" width="500" height="150" alt="Contaminacion"></h4>
+      <h3>¿Qué hacer para evitar la contaminación ambiental?</h3>
+      <P>• En el caso del aire, se debe controlar la cantidad de humo que sueltan
+      las industrias y los automóviles.</p>
+      <P>• Tratar de usar la bicicleta con mayor frecuencia y caminar todos los días.</P>
+      <P>• Para cuidar el agua, lo ideal es evitar que todas las sustancias
+      dañinas entren en contacto con ella.</P>image.png
+      <P>• Consumir menos productos desechables, ser más ecológicos. Es decir,
+      entender que lo que hagamos o dejemos de hacer al medio ambiente, influye
+      sobre nuestras vidas y nuestro futuro. <br><br>
+      <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/que-es-la-contaminacion-ambiental"
+      target="_blank" rel="noopener">Fuente: Contaminación ambiental</a></P>
+</div>
+     <h3>Actividades principales para luchar contra el cambio climático</h3> <hr>
+     <p>• Elegir para nuestros hogares y empresas compañías que generen electricidad
+     renovable.</p>
+     <p>•	Un uso racional del coche, el avión y elegir medios menos contaminantes,
+     como trenes y transporte público.</p>
+     <p>• Caminar más y coger la bicicleta.</p>
+     <p>•	No comprar cosas innecesarias.</p>
+     <h4><img src="../assets/calent-global.jpeg" wihth="400" height="130" alt="ambiente"></h4>
+     <h3>El calentamiento global una realidad que nos afecta a todos</h3>
+     <p>• Cada día el medio ambiente está siendo degradado por cada una de las 
+     actividades humanas que alteran las condiciones ambientales y los recursos 
+     naturales que son vitales para el desarrollo de la vida.</p>
+     <p>• Cuidar el medio ambiente es una necesidad prioritaria e inmediata 
+     ante la cantidad de problemas ambientales que amenazan con la calidad
+     de vida.</p>
+     <p>• No podemos esperar a que un recurso limitado como el agua se agote, 
+     sino que tenemos que actuar desde este momento, reduciendo su consumo y evitando 
+     la contaminación.<br><br>
+     <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
+     target="_blank" rel="noopener">Fuente: Calentamiento Global</a></P>
 </template>
 <script lang="ts">
 
@@ -91,5 +136,13 @@ h2 {
     padding: 10px;
     margin: 20px;
     float: left;
+}
+h4 {
+   box-shadow: 7px 4px 5px gray;
+    padding: 10px;
+    margin: 20px;
+    float: right;
+    font-display: flex;
+    text-align: center;
 }
 </style>

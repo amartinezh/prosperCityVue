@@ -54,27 +54,28 @@
       sobre nuestras vidas y nuestro futuro. <br><br>
       <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/que-es-la-contaminacion-ambiental"
       target="_blank" rel="noopener">Fuente: Contaminación ambiental</a></P>
-</div>
+
+     <img src="../assets/calent-global.jpeg" width="500" height="150" alt="calen">
      <h3>Actividades principales para luchar contra el cambio climático</h3> <hr>
-     <p>• Elegir para nuestros hogares y empresas compañías que generen electricidad
+     <p>Elegir para nuestros hogares y empresas compañías que generen electricidad
      renovable.</p>
-     <p>•	Un uso racional del coche, el avión y elegir medios menos contaminantes,
+     <p>Un uso racional del coche, el avión y elegir medios menos contaminantes,
      como trenes y transporte público.</p>
-     <p>• Caminar más y coger la bicicleta.</p>
-     <p>•	No comprar cosas innecesarias.</p>
-     <h4><img src="../assets/calent-global.jpeg" wihth="400" height="130" alt="ambiente"></h4>
+     <p>Caminar más y coger la bicicleta.</p>
+     <p>No comprar cosas innecesarias.</p>
      <h3>El calentamiento global una realidad que nos afecta a todos</h3>
-     <p>• Cada día el medio ambiente está siendo degradado por cada una de las 
-     actividades humanas que alteran las condiciones ambientales y los recursos 
+     <p>•Cada día el medio ambiente está siendo degradado por cada una de las
+     actividades humanas que alteran las condiciones ambientales y los recursos
      naturales que son vitales para el desarrollo de la vida.</p>
-     <p>• Cuidar el medio ambiente es una necesidad prioritaria e inmediata 
+     <p>•Cuidar el medio ambiente es una necesidad prioritaria e inmediata
      ante la cantidad de problemas ambientales que amenazan con la calidad
      de vida.</p>
-     <p>• No podemos esperar a que un recurso limitado como el agua se agote, 
-     sino que tenemos que actuar desde este momento, reduciendo su consumo y evitando 
+     <p>•No podeaamos esperar a que un recurso limitado como el agua se agote,
+     sino que tenemos que actuar desde este momento, reduciendo su consumo y evitando
      la contaminación.<br><br>
      <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
      target="_blank" rel="noopener">Fuente: Calentamiento Global</a></P>
+</div>
 </template>
 <script lang="ts">
 
@@ -142,6 +143,14 @@ h4 {
     padding: 10px;
     margin: 20px;
     float: right;
+    font-display: flex;
+    text-align: center;
+}
+img {
+   box-shadow: 7px 4px 5px gray;
+    padding: 10px;
+    margin: 20px;
+    float: left;
     font-display: flex;
     text-align: center;
 }

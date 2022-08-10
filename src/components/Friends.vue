@@ -30,7 +30,7 @@
      </li>
     </ul>
 
-    <h3>¿Qué es la contaminación ambiental?</h3>
+     <h3>¿Qué es la contaminación ambiental?</h3>
      <p>La contaminación ambiental es la presencia de sustancias o elementos dañinos
       para los seres humanos y los ecosistemas (seres vivos).Existen diferentes tipos
       de contaminación, pero básicamente se pueden dividir en:
@@ -59,7 +59,6 @@
 </template>
 
 <script lang="ts">
-
 import { defineComponent } from 'vue';
 
 export default defineComponent({

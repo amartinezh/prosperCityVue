@@ -2,43 +2,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="imagen-container">
         <div class="imagen-item imagen-1">
-            <h3 class="subtitle">ia vs human</h3>
-            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="mente humana vs mente de maquina" title="mente humana vs mente de maquina">
+            <h3 class="subtitle">IA vs humanos</h3>
+            <hr>
+            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mente humana vs mente de maquina" title="Mente humana vs mente de maquina">
         </div>
         <div class="imagen-item imagen-2">
-            <h3 class="subtitle">mentes inteligentes</h3>
+            <h3 class="subtitle">Calidad de vida</h3>
             <hr>
-            <img src="https://i.postimg.cc/hGKk3m1Y/AI-3.jpg" alt="mentes inteligentes" title="mentes inteligentes">
+            <img src="https://i.postimg.cc/R07FYSXh/AI-02.jpg" alt="Calidad de vida" title="Calidad de vida">
         </div>
         <div class="imagen-item imagen-3">
-            <h3 class="subtitle">autoconciencia</h3>
+            <h3 class="subtitle">Autoconciencia</h3>
             <hr>
-            <img src="https://i.postimg.cc/Dz59VzCw/AI-4.jpg " alt="autoconciencia" title="autoconciencia">
+            <img src="https://i.postimg.cc/Dz59VzCw/AI-4.jpg " alt="Autoconciencia" title="Autoconciencia">
         </div>
         <div class="imagen-item imagen-4">
-            <h3 class="subtitle">trabajo inteligente</h3>
+            <h3 class="subtitle">Realidad virtual</h3>
             <hr>
-            <img src="https://i.postimg.cc/bJJKqjMH/AI-5.jpg" alt="trabajo inteligente" title="trabajo inteligente">
+            <img src="https://i.postimg.cc/gjCbdR0W/AI-12.jpg" alt="Realidad virtual" title="Realidad virtual">
         </div>
         <div class="imagen-item imagen-5">
-            <h3 class="subtitle">agentes inteligentes</h3>
+            <h3 class="subtitle">Agentes inteligentes</h3>
             <hr>
-            <img src="https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg" alt="agentes inteligentes" title="agentes inteligentes">
+            <img src="https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg" alt="Agentes inteligentes" title="Agentes inteligentes">
         </div>
         <div class="imagen-item imagen-6">
-            <h3 class="subtitle">globalizacion inteligente</h3>
+            <h3 class="subtitle">Globalizacion inteligente</h3>
             <hr>
-            <img src="https://i.postimg.cc/MHk25FP7/AI-7.jpg" alt="globalizacion inteligente" title="globalizacion inteligente">
+            <img src="https://i.postimg.cc/gjQmJQN1/AI-16.jpg" alt="Globalizacion inteligente" title="Globalizacion inteligente">
         </div>
         <div class="imagen-item imagen-7">
-            <h3 class="subtitle">intelecto artificial</h3>
+            <h3 class="subtitle">Intelecto artificial</h3>
             <hr>
-            <img src="https://i.postimg.cc/Jz7wpJq2/AI-8.jpg" alt="intelecto artificial" title="intelecto artificial">
+            <img src="https://i.postimg.cc/HLLmwbVp/AI-20.jpg" alt="Intelecto artificial" title="Intelecto artificial">
         </div>
         <div class="imagen-item imagen-8">
-            <h3 class="subtitle">metaverso</h3>
+            <h3 class="subtitle">Metaverso</h3>
             <hr>
-            <img src="https://i.postimg.cc/J0CvZB0K/AI-9.jpg" alt="metaverso" title="metaverso">
+            <img src="https://i.postimg.cc/J0CvZB0K/AI-9.jpg" alt="Metaverso" title="Metaverso">
         </div>
     </div>
 </template>

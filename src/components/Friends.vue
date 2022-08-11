@@ -48,7 +48,7 @@
       las industrias y los automóviles.</p>
       <P>• Tratar de usar la bicicleta con mayor frecuencia y caminar todos los días.</P>
       <P>• Para cuidar el agua, lo ideal es evitar que todas las sustancias
-      dañinas entren en contacto con ella.</P>image.png
+      dañinas entren en contacto con ella.</P>
       <P>• Consumir menos productos desechables, ser más ecológicos. Es decir,
       entender que lo que hagamos o dejemos de hacer al medio ambiente, influye
       sobre nuestras vidas y nuestro futuro. <br><br>
@@ -70,11 +70,11 @@
      <p>•Cuidar el medio ambiente es una necesidad prioritaria e inmediata
      ante la cantidad de problemas ambientales que amenazan con la calidad
      de vida.</p>
-     <p>•No podeaamos esperar a que un recurso limitado como el agua se agote,
+     <p>•No podemos esperar a que un recurso limitado como el agua se agote,
      sino que tenemos que actuar desde este momento, reduciendo su consumo y evitando
      la contaminación.<br><br>
      <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
-     target="_blank" rel="noopener">Fuente: Calentamiento Global</a></P>
+     target="_blank" rel="noopener">Fuente: Calentamiento Global</a></p>
 </div>
 </template>
 <script lang="ts">

@@ -1,6 +1,6 @@
 <template>
  <div>
-  <p>Este es un componente de prueba</p>
+  <p>Cacique Candela el ave emblema Pensilvania</p>
  </div>
 </template>
 

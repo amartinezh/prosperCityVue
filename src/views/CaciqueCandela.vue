@@ -1,5 +1,6 @@
 <template>
     <div>
+     <p>Avistamiento de Aves Pensilvania</p>
     <ComponentCcandela/>
     </div>
 </template>
@@ -8,7 +9,6 @@ import ComponentCcandela from '@/components/ComponentCcandela.vue';
 
 export default {
   components: {
-    
     ComponentCcandela,
   },
 };

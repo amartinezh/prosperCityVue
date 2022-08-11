@@ -2,6 +2,8 @@
   <div class="home">
     <h1>Aqui encontrarás la lista de todos los integrantes de los equipos</h1>
     <ComponenteEjemploComponent titulo="Titulo del componente" msg="Bienvenido"/>
+    <ComponenteEjemploComponent titulo="Otro Component" msg="Bienvenido"/>
+    <ComponenteEjemploComponent titulo="El equipo de los MAS" msg="Bienvenido"/>
   </div>
 </template>
 

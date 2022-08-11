@@ -24,7 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'multimedia',
     component: MultimediaView,
   },
-
+  {
+    path: '/cacique-candela',
+    name: 'cacique-candela',
+    component: () => import('../views/CaciqueCandela.vue'),
+  },
 ];
 
 const router = createRouter({

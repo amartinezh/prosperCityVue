@@ -3,7 +3,8 @@
     <router-link to="/">-[Inicio]-</router-link> |
     <router-link to="/about">-- [Acerca de ...] --</router-link> |
     <router-link to="/tarea">-- [Tarea para grupos] --</router-link> |
-     <router-link to="/multimedia">-- Cacique Candela --</router-link> |
+    <router-link to="/multimedia">-- grupo rojo --</router-link> |
+    <router-link to="/cacique-candela">Cacique Candela</router-link> |
   </nav>
   <router-view />
 </template>

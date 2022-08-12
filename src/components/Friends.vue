@@ -1,7 +1,7 @@
 <template>
+<body>
 <div class="new-component">
     <h1>{{ msg }}</h1>
-    <hr>
     <ul>
      <li>
      <h2><img src="../assets/paisaje.jpeg" width="500" height="50" alt="Imagen de paisaje">
@@ -56,12 +56,12 @@
       target="_blank" rel="noopener">Fuente: Contaminación ambiental</a></P>
       <h5><img src="../assets/calentamiento.jpg" width="500" height="150" alt="calen"></h5>
       <h3>Actividades principales para luchar contra el cambio climático</h3>
-      <p>Elegir para nuestros hogares y empresas compañías que generen electricidad
-      renovable.</p>
-      <p>Un uso racional del coche, el avión y elegir medios menos contaminantes,
-      como trenes y transporte público.</p>
-      <p>Caminar más y coger la bicicleta.</p>
-      <p>No comprar cosas innecesarias.</p>
+      <p>•Elegir para nuestros hogares y empresas compañías que generen electricidad
+      renovable.<br>
+      •Un uso racional del coche, el avión y elegir medios menos contaminantes,
+      como trenes y transporte público.<br>
+      •Caminar más y coger la bicicleta.<br>
+      •No comprar cosas innecesarias.</p><br><br>
       <h3>El calentamiento global una realidad que nos afecta a todos</h3>
       <p>•Cada día el medio ambiente está siendo degradado por cada una de las
       actividades humanas que alteran las condiciones ambientales y los recursos
@@ -75,7 +75,45 @@
       la contaminación.<br><br>
       <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
       target="_blank" rel="noopener">Fuente: Calentamiento Global</a></p>
+
+      <h3>Conservación de Ecosistemas</h3>
+
+      <p>
+         La conservación del medio ambiente, conservación ambiental o protección ambiental,
+         se refiere a las distintas maneras que existen para regular, minimizar o impedir
+         el daño que las actividades de índole industrial, agrícola, urbana, comercial o de
+         otro tipo ocasionan a los ecosistemas naturales, y principalmente a la flora y la
+         fauna.La conservación del medio ambiente es el objetivo primordial del conservacionismo,
+         un movimiento social en defensa de políticas y leyes ecológicas, y tiene como valores
+         la biodiversidad, el equilibrio biótico, la armonía paisajística, entre otros. <br><br>
+         Esta postura, no obstante, no es idéntica a la de los ecologistas, ni debe confundirse
+         con ella. Estos últimos abogan por la no explotación de los recursos de la naturaleza,
+         mientras que los conservacionistas demandan una explotación responsable y sustentable
+         en términos ambientales.<br><br></p>
+        <h2 class="key"><img src="../assets/maragua.jpg" width="500" height="40"
+        alt="Imagen de paisaje">
+        <figcaption>Metales, solventes y fertilizantes que ingresan a ecosistemas costeros<br>
+          ocasionan 400 zonas muertas en océanos
+        </figcaption></h2>
+
+           <h3>Factores a tener en cuenta</h3>
+
+         <p>Organización del espacio: ara que la explotación se dé en términos controlables y
+         contemple diversas opciones de acceso a los recursos, para elegir la más adecuada.<br><br>
+         Protección del patrimonio: cada país posee un legado histórico, natural y cultural
+         que forma parte de su identidad y de su propia existencia, el cual debe ser protegido
+         de las manos rapaces.<br><br>
+         Garantizar la base de producción: Impedir el agotamiento o la malversación de recursos
+         naturales no renovables, como el petróleo, de altísimo valor industrial pero enormes
+         riesgos medioambientales durante su extracción y su transporte, para que la actividad
+         económica pueda sostenerse.<br><br>
+
+      <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
+      target="_blank" rel="noopener">Fuente: Conservación de Ecosistemas</a>
+
+         </p>
 </div>
+</body>
 </template>
 
 <script lang="ts">
@@ -91,22 +129,25 @@ export default defineComponent({
 
 <style scoped>
 
-a {
-  color: blueviolet;
+a :link{
+  color: aqua;
+}
+a{
+  text-decoration-line: underline;
+}
+body{
+  background: url(../assets/willy.png);
 }
 figcaption {
   font-size: 15px;
   text-align: left;
 }
-hr {
-  height: 2px;
-  background-color: gray;
-}
 h1 {
     font-size: 38px;
     font-weight: bold;
     text-shadow: 7px 4px 5px rgb(209, 208, 208);
-    margin: 40px;
+    margin: 0px;
+    padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 
@@ -137,6 +178,12 @@ h2 {
     padding: 10px;
     margin: 20px;
     float: left;
+}
+.key {
+    box-shadow: 7px 4px 5px gray;
+    padding: 10px;
+    margin: 20px;
+    float: right;
 }
 h4 {
    box-shadow: 7px 4px 5px gray;

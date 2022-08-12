@@ -108,7 +108,7 @@
          riesgos medioambientales durante su extracción y su transporte, para que la actividad
          económica pueda sostenerse.<br><br>
 
-      <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
+      <a href="https://concepto.de/conservacion-del-medio-ambiente/"
       target="_blank" rel="noopener">Fuente: Conservación de Ecosistemas</a>
 
          </p>

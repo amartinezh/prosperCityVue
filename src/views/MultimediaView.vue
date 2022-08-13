@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <multimedia titulo_tarea="Titulo de la tarea" msg="Comida"/>
-    <fotos/>
     <videos/>
+    <fotos/>
   </div>
 </template>
 

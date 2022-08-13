@@ -1,6 +1,5 @@
 <template>
     <div>
-     <p>Avistamiento de Aves Pensilvania</p>
     <ComponentCcandela/>
     </div>
 </template>

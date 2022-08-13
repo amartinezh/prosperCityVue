@@ -1,14 +1,14 @@
 <template>
     <div>
-    <ComponentCcandela/>
+    <ComponentCindy/>
     </div>
 </template>
 <script lang="ts">
-import ComponentCcandela from '@/components/ComponentCcandela.vue';
+import ComponentCindy from '@/components/ComponentCindy.vue';
 
 export default {
   components: {
-    ComponentCcandela,
+    ComponentCindy,
   },
 };
 </script>

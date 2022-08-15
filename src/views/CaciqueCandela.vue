@@ -1,10 +1,10 @@
 <template>
-    <div>
+  <div>
     <ComponentCindy/>
     <ComponentAnlly/>
     <ComponentMauricio/>
     <ComponentRicardo/>
-    </div>
+  </div>
 </template>
 <script lang="ts">
 import ComponentCindy from '@/components/ComponentCindy.vue';

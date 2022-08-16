@@ -1,5 +1,5 @@
 <template>
-    <h1><b>MULTIMEDIA</b></h1>
+    <h1 class="display-1">MULTIMEDIA</h1>
      <h2><b>Videos</b></h2>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="video-container">

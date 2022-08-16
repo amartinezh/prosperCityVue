@@ -10,10 +10,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import multimediaVideos from '@/components/MultimediaVideo.vue';
-import multimediaFotos from '@/components/MultimediaFotos.vue';
-import multimediaComentario from '@/components/MultimediaComentario.vue';
-import multimediaFooter from '@/components/MultimediaFooter.vue';
+import multimediaVideos from '@/components/ComponentesMultimedia/MultimediaVideo.vue';
+import multimediaFotos from '@/components/ComponentesMultimedia/MultimediaFotos.vue';
+import multimediaComentario from '@/components/ComponentesMultimedia/MultimediaComentario.vue';
+import multimediaFooter from '@/components/ComponentesMultimedia/MultimediaFooter.vue';
 
 export default defineComponent({
   name: 'MultimediaView',

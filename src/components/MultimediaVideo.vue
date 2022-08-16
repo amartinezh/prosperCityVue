@@ -1,5 +1,6 @@
 <template>
     <h1><b>MULTIMEDIA</b></h1>
+     <h2><b>Videos</b></h2>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="video-container">
         <div class="video-item video-1">
@@ -56,6 +57,10 @@ export default {
 <style>
     h1{
         text-align: center;
+    }
+    h2{
+        text-align: left;
+        margin: 8px;
     }
     .video-container{
         /* display: grid;

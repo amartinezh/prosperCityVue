@@ -8,6 +8,9 @@
             <hr>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VsduvmlZZuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button class="like" @click="increment1">
+                 <p>LaMDA inteligencia artificial con conciencia propia, con forma de
+                     humano diseñado por Google en 2017 con un extremado de redes neuronales
+                     artificiales profundas, se retroalimenta con textos </p>
                 <span class="material-symbols-outlined">favorite</span>
             </button> <span>{{like1}}</span>
         </div>
@@ -16,6 +19,9 @@
             <hr>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/UsG52AywMLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button class="like" @click="increment2">
+            <p>Avatar aplicación web por medio de inteligencia artificial con efectos visuales que
+                permite crear un Avatar
+                 animado en 3D con solo una imagen fija </p>
                 <span class="material-symbols-outlined">favorite</span>
             </button> <span>{{like2}}</span>
         </div>
@@ -24,6 +30,9 @@
             <hr>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/vCOy-US2NkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button class="like" @click="increment3">
+                <p>GouGAN2 es una inteligencia artificial donde su tecnología nos permite
+                    permite el diseño de dibujos y textos en imágenes
+                      realistas combinado mapeo de segmentación.</p>
                 <span class="material-symbols-outlined">favorite</span>
             </button> <span>{{like3}}</span>
         </div>

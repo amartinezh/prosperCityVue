@@ -1,12 +1,14 @@
 <template>
 <br>
-<label for="name">
-  <input @change="prueba" class="form-control" placeholder="ingresa el comentario" type="text" />
-</label><br><br>
-<button @click="enviar" class="btn btn-primary btn-sm">comentar</button>
-<ul class="list-group list-group-flush">
+<h1>Que opinas de nuestra galería? Déjanos tu comentario:</h1>
+<br>
+<ul class="list-grouplist-group-flush">
   <li class="list-group-item" v-for="(c) in comentarios" :key = "c">{{c}} </li>
 </ul>
+<label for="name">
+  <input @change="prueba" class="form-control" placeholder="Ingresa tu comentario" type="text" />
+</label><br><br>
+<button @click="enviar" class="btn btn-primary btn-sm">Comentar</button><br>
 
 </template>
 
@@ -25,3 +27,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.list-group-item {
+  border: rgb(216, 216, 212) 2px solid;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

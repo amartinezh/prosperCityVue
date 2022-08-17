@@ -1,4 +1,5 @@
 <template>
+<br>
   <div class="list-container">
     <div class="item">
       <p>Ayda Montoya Henao</p>
@@ -86,6 +87,7 @@
             alt="gitlogo"
           />
         </a>
+        <br>
     </div>
   </div>
 </template>

@@ -1,12 +1,10 @@
 <template>
-    <h2><b>Fotografías</b></h2>
-    <br>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="imagen-container">
         <div class="imagen-item imagen-1">
             <h3 class="subtitle">IA vs humanos</h3>
             <hr>
-            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mentee humana vs mente de maquina" title="Mente humana vs mente de maquina">
+            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Meente humana vs mente de maquina" title="Mente humana vs mente de maquina">
         </div>
         <div class="imagen-item imagen-2">
             <h3 class="subtitle">Calidad de vida</h3>

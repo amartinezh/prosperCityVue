@@ -70,7 +70,7 @@
       ante la cantidad de problemas ambientales que amenazan con la calidad
       de vida.</p>
 
-      <p>•No podemos esperar a que un recurso limitado como el agua se gote,
+      <p>•No podemos esperar a que un recurso limitado como el agua se agote,
       sino que tenemos que actuar desde este momento, reduciendo su consumo y evitando
       la contaminación.<br><br>
       <a href="https://www.energyavm.es/los-principales-problemas-medioambientales-en-el-mundo/"
@@ -111,7 +111,27 @@
       <a href="https://concepto.de/conservacion-del-medio-ambiente/"
       target="_blank" rel="noopener">Fuente: Conservación de Ecosistemas</a>
 
-         </p>
+       </p><br>
+       <h3>Especies en peligro de extinción</h3>
+       <p>Los seres humanos estamos recogiendo lo que nuestros ancestros han sembrado 
+        en cuanto al cuidado de nuestro planeta tierra se refiere. Estamos recogiendo 
+        lluvias extremas, días calurosos y secos, y sobre todo la desaparición de miles 
+        de especies de animales y plantas<br>
+        Con situaciones como la caza indiscriminada de animales, la quema y la tala de 
+        bosques enteros, muchos son los animales que no podrán tener hogar y sobre todo, 
+        no podrán multiplicarse. Así es ahora el panorama que nuestro planeta puede mostrarnos.        
+       </p>
+       <h3>Principales especies en peligro</h3>
+       <h3>El Jaguar</h3>
+       <h5><img src="../assets/jaguar.jpg" width="500" height="150" alt="calen"></h5>
+       <h3>El Manatí</h3>
+       <h5><img src="../assets/Manati.jpg" width="500" height="150" alt="calen"></h5>
+       <h3>El Cóndor</h3>
+       <h5><img src="../assets/condor.jpg" width="500" height="150" alt="calen"></h5>
+
+       <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/biodiverciudad/animales-en-de-extincion#:~:text=Sin%20embargo%2C%20tambi%C3%A9n%20est%C3%A1n%20en,y%20el%20tigre%2C%20entre%20otros."
+      target="_blank" rel="noopener">Fuente: Gobernación de Colombia</a>
+
 </div>
 </body>
 </template>

@@ -6,7 +6,7 @@
         <div class="imagen-item imagen-1">
             <h3 class="subtitle">IA vs humanos</h3>
             <hr>
-            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mente humana vs mente de maquina" title="Mente humana vs mente de maquina">
+            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mentee humana vs mente de maquina" title="Mente humana vs mente de maquina">
         </div>
         <div class="imagen-item imagen-2">
             <h3 class="subtitle">Calidad de vida</h3>

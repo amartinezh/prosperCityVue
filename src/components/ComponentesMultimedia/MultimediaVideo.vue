@@ -69,7 +69,6 @@ export default {
     },
   },
 };
-
 </script>
 <style>
     .video-container{
@@ -110,7 +109,6 @@ export default {
         color: #ec3e3e;
         transition: 500ms ease;
     }
-
     @media (max-width: 700px){
         .video-container{
         /* display: grid;

@@ -3,45 +3,10 @@
     <br>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="imagen-container">
-        <div class="imagen-item imagen-1">
-            <h3 class="subtitle">IA vs humanos</h3>
+        <div class="imagen-item imagen-8" v-for="i in imagenes" :key = i>
+            <h3 class="subtitle" >{{i.descripcion}}</h3>
             <hr>
-            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mentee humana vs mente de maquina" title="Mente humana vs mente de maquina">
-        </div>
-        <div class="imagen-item imagen-2">
-            <h3 class="subtitle">Calidad de vida</h3>
-            <hr>
-            <img src="https://i.postimg.cc/R07FYSXh/AI-02.jpg" alt="Calidad de vida" title="Calidad de vida">
-        </div>
-        <div class="imagen-item imagen-3">
-            <h3 class="subtitle">Autoconciencia</h3>
-            <hr>
-            <img src="https://i.postimg.cc/Dz59VzCw/AI-4.jpg " alt="Autoconciencia" title="Autoconciencia">
-        </div>
-        <div class="imagen-item imagen-4">
-            <h3 class="subtitle">Realidad virtual</h3>
-            <hr>
-            <img src="https://i.postimg.cc/gjCbdR0W/AI-12.jpg" alt="Realidad virtual" title="Realidad virtual">
-        </div>
-        <div class="imagen-item imagen-5">
-            <h3 class="subtitle">Agentes inteligentes</h3>
-            <hr>
-            <img src="https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg" alt="Agentes inteligentes" title="Agentes inteligentes">
-        </div>
-        <div class="imagen-item imagen-6">
-            <h3 class="subtitle">Globalizacion inteligente</h3>
-            <hr>
-            <img src="https://i.postimg.cc/gjQmJQN1/AI-16.jpg" alt="Globalizacion inteligente" title="Globalizacion inteligente">
-        </div>
-        <div class="imagen-item imagen-7">
-            <h3 class="subtitle">Intelecto artificial</h3>
-            <hr>
-            <img src="https://i.postimg.cc/HLLmwbVp/AI-20.jpg" alt="Intelecto artificial" title="Intelecto artificial">
-        </div>
-        <div class="imagen-item imagen-8">
-            <h3 class="subtitle">Metaverso</h3>
-            <hr>
-            <img src="https://i.postimg.cc/J0CvZB0K/AI-9.jpg" alt="Metaverso" title="Metaverso">
+            <img v-bind:src= "i.imagen" alt='no dio' v-bind:title= "i.descripcion">
         </div>
     </div>
 </template>
@@ -50,7 +15,15 @@
 export default {
   data() {
     return {
-      imagenes: [],
+      imagenes: [{ imagen: 'https://i.postimg.cc/R07FYSXh/AI-02.jpg', descripcion: 'Calidad de vida' },
+        { imagen: 'https://i.postimg.cc/Dz59VzCw/AI-4.jpg', descripcion: 'Autoconciencia' },
+        { imagen: 'https://i.postimg.cc/gjCbdR0W/AI-12.jpg', descripcion: 'Realidad virtual' },
+        { imagen: 'https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg', descripcion: 'Agentes inteligentes' },
+        { imagen: 'https://i.postimg.cc/gjQmJQN1/AI-16.jpg', descripcion: 'Globalizacion inteligente' },
+        { imagen: 'https://i.postimg.cc/HLLmwbVp/AI-20.jpg', descripcion: 'Intelecto artificial' },
+        { imagen: 'https://i.postimg.cc/hv0xsHD6/AI-1.jpg ', descripcion: 'IA vs humanos' },
+        { imagen: 'https://i.postimg.cc/J0CvZB0K/AI-9.jpg', descripcion: 'Metaverso' }],
+      imagen: '',
     };
   },
 };

@@ -4,7 +4,8 @@
 <br>
 
 <label for="name">
-  <input v-model="comentar"  class="form-control" @keyup.enter="agregarcomentario" type="text" />
+  <input v-model="comentar"  class="form-control" @keyup.enter="agregarcomentario"
+  placeholder="preciona enter o de click en comentar" type="text" />
 </label><br><br>
 <button @click="agregarcomentario" class="btn btn-primary btn-sm">Comentar</button><br>
 <ul class="list-grouplist-group-flush">

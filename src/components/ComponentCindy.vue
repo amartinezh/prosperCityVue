@@ -1,13 +1,11 @@
 <template>
- <div>
-  <h2>componente Cindy</h2>
-    <p class="texto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-      consectetur reiciendis architecto dolorum est officia quos nihil dicta
-      quaerat, facere ullam, porro labore nesciunt. Dolorum natus dolor culpa
-      repellendus iure?
-    </p>
- </div>
+   <h1>Cacique Candela</h1>
+   <img alt="Ave Cacique Candela By Julian R Zuluaga" src="../assets/Caciquecandela.jpeg">
+   <h2>Hypopyrrhus pyrohypogaster</h2>
+   <p>Ave endémica de Colombia, Se alimenta principalmente de insectos,
+      y algunos frutos, con distribución restringida en el País.
+      En el Oriente de Caldas solo se observa en Pensilvania, Manzanares y Samaná.
+      Amenazada de extinción en categoría Vulnerable.</p>
 </template>
 <script lang="ts">
 </script>

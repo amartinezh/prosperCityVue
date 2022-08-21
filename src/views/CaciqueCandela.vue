@@ -21,7 +21,7 @@ export default {
     ComponentMauricio,
     ComponentRicardo,
     ComponentLiseth,
-},
+  },
 };
 </script>
 <style scoped>

@@ -5,6 +5,7 @@
     <ComponentMauricio/>
     <ComponentRicardo/>
     <ComponentLiseth/>
+    <ComponentYexi/>
   </div>
 </template>
 <script lang="ts">
@@ -13,6 +14,7 @@ import ComponentAnlly from '@/components/ComponentAnlly.vue';
 import ComponentMauricio from '@/components/ComponentMauricio.vue';
 import ComponentRicardo from '@/components/ComponentRicardo.vue';
 import ComponentLiseth from '@/components/ComponentLiseth.vue';
+import ComponentYexi from '@/components/ComponentYexi.vue';
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     ComponentMauricio,
     ComponentRicardo,
     ComponentLiseth,
-},
+    ComponentYexi,
+  },
 };
 </script>
 <style scoped>

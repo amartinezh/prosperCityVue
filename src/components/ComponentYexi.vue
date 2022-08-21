@@ -9,6 +9,9 @@
       alimenta principalmente de nectar, complementa su dieta con pequeños insectos. en Pensilvania
       se observa en el Centro vacacional el Bosque.
     </p>
+    <h2 class="autor">
+      by:Andres Felipe Cardona Toro
+    </h2>
   </div>
 </template>
 <script lang="ts"></script>
@@ -29,5 +32,8 @@
   font-size: 30px;
   padding: 10px;
   color: black;
+}
+.autor{
+  margin-bottom: 30px;
 }
 </style>

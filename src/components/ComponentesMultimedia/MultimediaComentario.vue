@@ -1,11 +1,11 @@
 <template>
 <br>
-<h1>Que opinas de nuestra galería? Déjanos tu comentario:</h1>
+<h1>¿Qué opinas de nuestra galería? Déjanos tu comentario:</h1>
 <br>
 
 <label for="name">
   <input v-model="comentar"  class="form-control" @keyup.enter="agregarcomentario"
-  placeholder="preciona enter o de click en comentar" type="text" />
+  placeholder="presiona enter o de click en comentar" type="text" />
 </label><br><br>
 <button @click="agregarcomentario" class="btn btn-primary btn-sm">Comentar</button><br>
 <ul class="list-grouplist-group-flush">

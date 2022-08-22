@@ -79,8 +79,8 @@
       </div>
 
       <div class="item">
-        <p>Yeny Constanza</p>
-        <a href="">
+        <p>Yenny Constanza Botero</p>
+        <a href="https://github.com/konny-botmar">
           <img
             class="git-logo"
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"

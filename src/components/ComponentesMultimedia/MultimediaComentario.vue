@@ -1,13 +1,17 @@
 <template>
 <br>
-<h1>Que opinas de nuestra galería? Déjanos tu comentario:</h1>
+<h1>¿Qué opinas de nuestra galería? Déjanos tu comentario:</h1>
 <br>
 
 <label for="name">
-  <input @change="prueba" class="form-control" placeholder="Ingresa tu comentario" type="text" />
+  <!-- en el input vamos a cacturar nuestro texto en la variable comentar -->
+  <input v-model="comentar"  class="form-control" @keyup.enter="agregarcomentario"
+  placeholder="presiona enter o de click en comentar" type="text" />
 </label><br><br>
-<button @click="enviar" class="btn btn-primary btn-sm">Comentar</button><br>
+<!-- aplicamos el evento click para cuando presionemos el boton llamemos a la funcion-->
+<button @click="agregarcomentario" class="btn btn-primary btn-sm">Comentar</button><br>
 <ul class="list-grouplist-group-flush">
+  <!-- recorremos toda nuestra lista de comentarios para mostrar comentario por comentario -->
   <li class="list-group-item" v-for="(c) in comentarios" :key = "c">{{c}} </li>
 </ul>
 
@@ -18,12 +22,13 @@ export default {
   data() {
     return {
       comentarios: [],
+      comentar: '',
     };
   },
   methods: {
-    prueba(e) {
-      console.log(e.target.value);
-      this.comentarios.push(e.target.value);
+    agregarcomentario() {
+      this.comentarios.push(this.comentar);
+      this.comentar = '';
     },
   },
 };

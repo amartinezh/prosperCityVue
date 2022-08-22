@@ -1,50 +1,98 @@
 <template>
-    <h2><b>Fotografías</b></h2>
+    <h2 class="text-center display-4 my-4">Fotografías</h2>
+    <!-- creamos el boton que hace llamado al modal -->
+    <a href="#!"  data-bs-toggle="modal" data-bs-target="#agregar_imagen">
+          <button class="btn btn-primary">INGRESAR NUEVA FOTO</button>
+    </a>
+    <!-- creamos las configuraciones del modal -->
+    <div tabindex="-1" aria-labelledby="agregar_imagen" aria-hidden="true"
+     class="modal fade" id="agregar_imagen">
+      <div class="modal-dialog  modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <!-- header del modal-->
+            <div class="modal-header">
+             <h5 class="display-5">ingresa la imagen nueva</h5>
+            </div>
+            <!-- cuerpo del modal -->
+            <div class="modal-body">
+              <!-- en los inputs esta los v-model que hace el llamado a la variable
+              el cual va a guardar lo que escribamos en el input en la variable-->
+              <span class="label label-default display-5">imagen</span>
+              <input type="text" class="display-5" v-model="imagen"
+              placeholder="ingresa la url de la imagen">
+              <span class="label label-default display-5">descripcion</span>
+              <input type="text" v-model="descripcion"
+               placeholder="ingresa la descripcion" class="display-5">
+            </div>
+            <!-- footer del modal -->
+            <dir class="model-footer">
+              <!-- agregamos el evento @click al button para llamar la funcion
+              que agrega lo que colocamos en los v-model a la lista -->
+              <button class="btn btn-danger close display-5"
+               data-dismiss='modal' @click="agregarImagen">agregar</button>
+            </dir>
+          </div>
+      </div>
+  </div>
     <br>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="imagen-container">
-        <div class="imagen-item imagen-1">
-            <h3 class="subtitle">IA vs humanos</h3>
+        <!-- se realizo un ciclo for el cual va a iterar toda la lista
+    mostrando la descripcion y la imagen -->
+        <div class="imagen-item imagen-8" v-for="i in imagenes" :key = i>
+            <h3 class="subtitle" >{{i.descripcion}}</h3>
             <hr>
-            <img src="https://i.postimg.cc/hv0xsHD6/AI-1.jpg " alt="Mentee humana vs mente de maquina" title="Mente humana vs mente de maquina">
-        </div>
-        <div class="imagen-item imagen-2">
-            <h3 class="subtitle">Calidad de vida</h3>
-            <hr>
-            <img src="https://i.postimg.cc/R07FYSXh/AI-02.jpg" alt="Calidad de vida" title="Calidad de vida">
-        </div>
-        <div class="imagen-item imagen-3">
-            <h3 class="subtitle">Autoconciencia</h3>
-            <hr>
-            <img src="https://i.postimg.cc/Dz59VzCw/AI-4.jpg " alt="Autoconciencia" title="Autoconciencia">
-        </div>
-        <div class="imagen-item imagen-4">
-            <h3 class="subtitle">Realidad virtual</h3>
-            <hr>
-            <img src="https://i.postimg.cc/gjCbdR0W/AI-12.jpg" alt="Realidad virtual" title="Realidad virtual">
-        </div>
-        <div class="imagen-item imagen-5">
-            <h3 class="subtitle">Agentes inteligentes</h3>
-            <hr>
-            <img src="https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg" alt="Agentes inteligentes" title="Agentes inteligentes">
-        </div>
-        <div class="imagen-item imagen-6">
-            <h3 class="subtitle">Globalizacion inteligente</h3>
-            <hr>
-            <img src="https://i.postimg.cc/gjQmJQN1/AI-16.jpg" alt="Globalizacion inteligente" title="Globalizacion inteligente">
-        </div>
-        <div class="imagen-item imagen-7">
-            <h3 class="subtitle">Intelecto artificial</h3>
-            <hr>
-            <img src="https://i.postimg.cc/HLLmwbVp/AI-20.jpg" alt="Intelecto artificial" title="Intelecto artificial">
-        </div>
-        <div class="imagen-item imagen-8">
-            <h3 class="subtitle">Metaverso</h3>
-            <hr>
-            <img src="https://i.postimg.cc/J0CvZB0K/AI-9.jpg" alt="Metaverso" title="Metaverso">
+            <img v-bind:src= "i.imagen" alt='no dio' v-bind:title= "i.descripcion">
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  // creamos la lista de objetos la cual va a contener la imagen ,
+  // la descripcion y las variables
+  // para almacenar los datos que vamos a enviar a la lista desde los v-model
+  data() {
+    return {
+      imagenes: [{
+        imagen: 'https://i.postimg.cc/R07FYSXh/AI-02.jpg', descripcion: 'Calidad de vida', modal: '#item1', modal_id: 'item1',
+      },
+      {
+        imagen: 'https://i.postimg.cc/Dz59VzCw/AI-4.jpg', descripcion: 'Autoconciencia', modal: '#item2', modal_id: 'item2',
+      },
+      {
+        imagen: 'https://i.postimg.cc/gjCbdR0W/AI-12.jpg', descripcion: 'Realidad virtual', modal: '#item3', modal_id: 'item3',
+      },
+      {
+        imagen: 'https://i.postimg.cc/8C0VJ5Ln/AI-6.jpg', descripcion: 'Agentes inteligentes', modal: '#item4', modal_id: 'item4',
+      },
+      {
+        imagen: 'https://i.postimg.cc/gjQmJQN1/AI-16.jpg', descripcion: 'Globalizacion inteligente', modal: '#item5', modal_id: 'item5',
+      },
+      {
+        imagen: 'https://i.postimg.cc/HLLmwbVp/AI-20.jpg', descripcion: 'Intelecto artificial', modal: '#item6', modal_id: 'item6',
+      },
+      {
+        imagen: 'https://i.postimg.cc/hv0xsHD6/AI-1.jpg ', descripcion: 'IA vs humanos', modal: '#item7', modal_id: 'item7',
+      },
+      {
+        imagen: 'https://i.postimg.cc/J0CvZB0K/AI-9.jpg', descripcion: 'Metaverso', modal: '#item8', modal_id: 'item8',
+      }],
+      imagen: '',
+      descripcion: '',
+    };
+  },
+  // funcion que va agregar nuestra imagen y descripcion a la lista
+  methods: {
+    agregarImagen() {
+      this.imagenes.push({
+        imagen: this.imagen, descripcion: this.descripcion, modal: '#item8', modal_id: 'item8',
+      });
+      this.imagen = '';
+    },
+  },
+};
+</script>
 
 <style>
 

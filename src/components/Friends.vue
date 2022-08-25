@@ -121,13 +121,13 @@
         bosques enteros, muchos son los animales que no podrán tener hogar y sobre todo, 
         no podrán multiplicarse. Así es ahora el panorama que nuestro planeta puede mostrarnos.        
        </p>
+       <p id="animalesPeligro">
        <h3>Principales especies en peligro</h3>
-       <h3>El Jaguar</h3>
-       <h5><img src="../assets/jaguar.jpg" width="500" height="150" alt="calen"></h5>
-       <h3>El Manatí</h3>
-       <h5><img src="../assets/Manati.jpg" width="500" height="150" alt="calen"></h5>
-       <h3>El Cóndor</h3>
-       <h5><img src="../assets/condor.jpg" width="500" height="150" alt="calen"></h5>
+       <p>El Jaguar, El Manatí, El Cóndor...</p>
+       <h5><img src="../assets/jaguar.jpg" width="590" height="200" alt="calen"></h5>
+       <h5><img src="../assets/Manati.jpg" width="340" height="100" alt="calen"></h5>
+       <h5><img src="../assets/condor.jpg" width="340" height="100" alt="calen"></h5>
+       </p>
 
        <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/biodiverciudad/animales-en-de-extincion#:~:text=Sin%20embargo%2C%20tambi%C3%A9n%20est%C3%A1n%20en,y%20el%20tigre%2C%20entre%20otros."
       target="_blank" rel="noopener">Fuente: Gobernación de Colombia</a>
@@ -218,5 +218,9 @@ h5 {
   padding: 10px;
   margin: 20px;
   float: left;
+}
+#animalesPeligro{
+  display:flex;
+  flex:row wrap;
 }
 </style>

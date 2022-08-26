@@ -99,10 +99,10 @@
            <h3>Factores a tener en cuenta</h3>
 
          <p>Organización del espacio: ara que la explotación se dé en términos controlables y
-         contemple diversas opciones de acceso a los recursos, para elegir la más adecuada.<br><br>
-         Protección del patrimonio: cada país posee un legado histórico, natural y cultural
-         que forma parte de su identidad y de su propia existencia, el cual debe ser protegido
-         de las manos rapaces.<br><br>
+         contemple diversas opciones de acceso a los recursos, para elegir la más adecuada.<br>
+         Protección del patrimonio:cada país posee un legado histórico, 
+         natural y culturalque forma parte de su identidad y de su propia existencia, 
+         el cual debe ser protegido de las manos rapaces.<br><br>
          Garantizar la base de producción: Impedir el agotamiento o la malversación de recursos
          naturales no renovables, como el petróleo, de altísimo valor industrial pero enormes
          riesgos medioambientales durante su extracción y su transporte, para que la actividad
@@ -113,20 +113,22 @@
 
        </p><br>
        <h3>Especies en peligro de extinción</h3>
-       <p>Los seres humanos estamos recogiendo lo que nuestros ancestros han sembrado 
-        en cuanto al cuidado de nuestro planeta tierra se refiere. Estamos recogiendo 
-        lluvias extremas, días calurosos y secos, y sobre todo la desaparición de miles 
-        de especies de animales y plantas<br>
-        Con situaciones como la caza indiscriminada de animales, la quema y la tala de 
-        bosques enteros, muchos son los animales que no podrán tener hogar y sobre todo, 
-        no podrán multiplicarse. Así es ahora el panorama que nuestro planeta puede mostrarnos.        
-       </p>
+        <p>Los seres humanos estamos recogiendo lo que nuestros ancestros han sembrado 
+          en cuanto al cuidado de nuestro planeta tierra se refiere. Estamos recogiendo 
+          lluvias extremas, días calurosos y secos, y sobre todo la desaparición de miles 
+          de especies de animales y plantas<br>
+          Con situaciones como la caza indiscriminada de animales, la quema y la tala de 
+          bosques enteros, muchos son los animales que no podrán tener hogar y sobre todo, 
+          no podrán multiplicarse. Así es ahora el panorama que nuestro planeta puede mostrarnos.        
+        </p>
        <p id="animalesPeligro">
-       <h3>Principales especies en peligro</h3>
-       <p>El Jaguar, El Manatí, El Cóndor...</p>
-       <h5><img src="../assets/jaguar.jpg" width="590" height="200" alt="calen"></h5>
-       <h5><img src="../assets/Manati.jpg" width="340" height="100" alt="calen"></h5>
-       <h5><img src="../assets/condor.jpg" width="340" height="100" alt="calen"></h5>
+        <h3>Principales especies en peligro</h3>
+          <h5><img src="../assets/jaguar.jpg" width="580" height="200" alt="jaguar">
+          <fingcaption>El Jaguar</fingcaption></h5>
+          <h5><img src="../assets/Manati.jpg" width="315" height="100" alt="Manati">
+          <fingcaption>El Manatí</fingcaption></h5>
+          <h5><img src="../assets/condor.jpg" width="315" height="100" alt="Condor">
+          <fingcaption>El Cóndor</fingcaption></h5>
        </p>
 
        <a href="https://www.culturarecreacionydeporte.gov.co/es/bogotanitos/biodiverciudad/animales-en-de-extincion#:~:text=Sin%20embargo%2C%20tambi%C3%A9n%20est%C3%A1n%20en,y%20el%20tigre%2C%20entre%20otros."
@@ -157,6 +159,7 @@ a{
 }
 body{
   background: url(../assets/willy.png);
+  background-repeat: inherit;
 }
 figcaption {
   font-size: 15px;
@@ -218,9 +221,5 @@ h5 {
   padding: 10px;
   margin: 20px;
   float: left;
-}
-#animalesPeligro{
-  display:flex;
-  flex:row wrap;
 }
 </style>

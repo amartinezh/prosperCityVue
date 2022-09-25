@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue';
 import TareaView from '../views/TareaView.vue';
 import MultimediaView from '../views/MultimediaView.vue';
 import ComponenteView from '../views/ComponenteEjemplo.vue';
+import ApiView from '../views/ApiView.vue';
+import ApiEquiposView from '../views/ApiEquiposView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,7 +32,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'multimedia',
     component: MultimediaView,
   },
-
+  {
+    path: '/api',
+    name: 'api',
+    component: ApiView,
+  },
+  {
+    path: '/equipos-api',
+    name: 'equipos-api',
+    component: ApiEquiposView,
+  },
 ];
 
 const router = createRouter({

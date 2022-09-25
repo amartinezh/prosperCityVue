@@ -5,6 +5,8 @@
     <router-link to="/tarea">-- [Tarea para grupos] --</router-link> |
     <router-link to="/componente_ejemplo">-- [Ejemplo de componentes] --</router-link> |
     <router-link to="/multimedia">-- bitflow --</router-link> |
+    <router-link to="/api">-- API --</router-link> |
+    <router-link to="/equipos-api">-- Equipos SCRUM API --</router-link> |
   </nav>
   <router-view />
 </template>
